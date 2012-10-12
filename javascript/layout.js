@@ -58,7 +58,7 @@ var addPoint = function(i){
     _maps[i].cursor = cursorURL;
 }
 
-var exportCSV = function(){
+var exportCSV = function(event){
     var csv = "\"order\",\"question\",\"hint\",\"x\",\"y\"\n"
     $(".questionContent").each(function(i){
         var index = i.toString();
@@ -69,4 +69,16 @@ var exportCSV = function(){
         var csvAdd = "\""+index+"\",\""+question+"\",\""+hint+"\",\""+x+"\",\""+y+"\"\n";  
         csv = csv+csvAdd;
     });
+    
+    saveFile(event,csv);
+}
+
+var saveFile = function(event,csv){
+    $.generateFile({
+    		filename	: 'geoQuiz.csv',
+			content		: csv,
+			script		: 'download.php'
+		});
+		
+		event.preventDefault();
 }
