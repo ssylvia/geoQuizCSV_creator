@@ -77,7 +77,7 @@ var saveFile = function(event,csv){
     $.generateFile({
     		filename	: 'geoQuiz.csv',
 			content		: csv,
-			script		: 'download.php'
+			script		: 'export.php'
 		});
 		
 		event.preventDefault();
