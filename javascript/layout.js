@@ -129,8 +129,9 @@ var exportCSV = function(event){
         var description = $(this).children("form").children(".description").val();
         var hint = $(this).children("form").children(".hint").val();
         var img_URL = $(this).children("form").children(".imgURL").val();
-        var x = _maps[i].questionLocation.graphics[0].geometry.x.toString();
-        var y = _maps[i].questionLocation.graphics[0].geometry.y.toString();
+        var geoPoint = esri.geometry.webMercatorToGeographic(_maps[i].questionLocation.graphics[0].geometry)
+        var x = geoPoint.x.toString();
+        var y = _geoPoint.y.toString();
         var csvAdd = "\""+index+"\",\""+question+"\",\""+title+"\",\""+description+"\",\""+hint+"\",\""+img_URL+"\",\""+x+"\",\""+y+"\"\n";  
         csv = csv+csvAdd;
     });
