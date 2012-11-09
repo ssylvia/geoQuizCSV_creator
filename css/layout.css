@@ -94,11 +94,26 @@ a.noButton{
     font-family:Georgia, serif;
     padding:10px 0 10px 0;
     border-top:1px solid #65350b;
+    cursor:pointer;
 }
 
 .stepContent{
+    display:none;
     padding-top:10px;
     font-size:18px;
+}
+
+.insetInstructions{
+    font-style:italic;
+    font-size:16px;
+}
+
+.screenshot{
+    position:relative;
+    width:100%;
+    margin:7px 0 15px 0;
+    border:3px solid #dadada;
+    overflow:hidden;    
 }
 
 .question{

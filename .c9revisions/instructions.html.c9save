@@ -185,3 +185,305 @@
 {"ts":1352488243671,"patch":[[{"diffs":[[0,"s=\"inset"],[1,"Inst"],[0,">If you "]],"start1":1218,"start2":1218,"length1":16,"length2":20}]],"length":1441,"saved":false}
 {"ts":1352488245319,"patch":[[{"diffs":[[0,"nsetInst"],[1,"ruct"],[0,">If you "]],"start1":1222,"start2":1222,"length1":16,"length2":20}]],"length":1445,"saved":false}
 {"ts":1352488246535,"patch":[[{"diffs":[[0,"Instruct"],[1,"ions\""],[0,">If you "]],"start1":1226,"start2":1226,"length1":16,"length2":21}]],"length":1450,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1352493395161,"patch":[[{"diffs":[[0," one now.</li>\r\n"],[1,"              <li class=\"insetInstructions\">If you do not already have a ArcGIS Online account, create one now.</li>\r\n"],[0,"            </ul"]],"start1":1298,"start2":1298,"length1":32,"length2":150}]],"length":1568,"saved":false}
+{"ts":1352493401427,"patch":[[{"diffs":[[0,"ns\">"],[-1,"If you do not already have a ArcGIS Online account, create one now."],[1,"Both the "],[0,"</li"]],"start1":1354,"start2":1354,"length1":75,"length2":17}]],"length":1510,"saved":false}
+{"ts":1352493402217,"patch":[[{"diffs":[[0,"oth the "],[1,"Per"],[0,"</li>\r\n "]],"start1":1359,"start2":1359,"length1":16,"length2":19}]],"length":1513,"saved":false}
+{"ts":1352493405901,"patch":[[{"diffs":[[0," the Per"],[1,"sonal Accou"],[0,"</li>\r\n "]],"start1":1362,"start2":1362,"length1":16,"length2":27}]],"length":1524,"saved":false}
+{"ts":1352493406978,"patch":[[{"diffs":[[0,"al Accou"],[1,"nt a"],[0,"</li>\r\n "]],"start1":1373,"start2":1373,"length1":16,"length2":20}]],"length":1528,"saved":false}
+{"ts":1352493408189,"patch":[[{"diffs":[[0,"ccount a"],[1,"nd "],[0,"</li>\r\n "]],"start1":1377,"start2":1377,"length1":16,"length2":19}]],"length":1531,"saved":false}
+{"ts":1352493412745,"patch":[[{"diffs":[[0,"unt and "],[1,"the "],[0,"</li>\r\n "]],"start1":1380,"start2":1380,"length1":16,"length2":20}]],"length":1535,"saved":false}
+{"ts":1352493414187,"patch":[[{"diffs":[[0,"and the "],[1,"Orga"],[0,"</li>\r\n "]],"start1":1384,"start2":1384,"length1":16,"length2":20}]],"length":1539,"saved":false}
+{"ts":1352493414856,"patch":[[{"diffs":[[0,"the Orga"],[1,"n"],[0,"</li>\r\n "]],"start1":1388,"start2":1388,"length1":16,"length2":17}]],"length":1540,"saved":false}
+{"ts":1352493416137,"patch":[[{"diffs":[[0,"he Organ"],[1,"izati"],[0,"</li>\r\n "]],"start1":1389,"start2":1389,"length1":16,"length2":21}]],"length":1545,"saved":false}
+{"ts":1352493417109,"patch":[[{"diffs":[[0,"ganizati"],[1,"on"],[0,"</li>\r\n "]],"start1":1394,"start2":1394,"length1":16,"length2":18}]],"length":1547,"saved":false}
+{"ts":1352493418565,"patch":[[{"diffs":[[0,"nization"],[1,"al Acc"],[0,"</li>\r\n "]],"start1":1396,"start2":1396,"length1":16,"length2":22}]],"length":1553,"saved":false}
+{"ts":1352493422068,"patch":[[{"diffs":[[0,"onal Acc"],[1,"ount will work"],[0,"</li>\r\n "]],"start1":1402,"start2":1402,"length1":16,"length2":30}]],"length":1567,"saved":false}
+{"ts":1352493429880,"patch":[[{"diffs":[[0,"ill work"],[1," for this ap"],[0,"</li>\r\n "]],"start1":1416,"start2":1416,"length1":16,"length2":28}]],"length":1579,"saved":false}
+{"ts":1352493431906,"patch":[[{"diffs":[[0,"r th"],[-1,"is ap"],[0,"</li"]],"start1":1427,"start2":1427,"length1":13,"length2":8}]],"length":1574,"saved":false}
+{"ts":1352493433218,"patch":[[{"diffs":[[0,"ork for "],[-1,"th"],[0,"</li>\r\n "]],"start1":1421,"start2":1421,"length1":18,"length2":16}]],"length":1572,"saved":false}
+{"ts":1352493434731,"patch":[[{"diffs":[[0,"ork for "],[1,"creatin"],[0,"</li>\r\n "]],"start1":1421,"start2":1421,"length1":16,"length2":23}]],"length":1579,"saved":false}
+{"ts":1352493436412,"patch":[[{"diffs":[[0," creatin"],[1,"g this app"],[0,"</li>\r\n "]],"start1":1428,"start2":1428,"length1":16,"length2":26}]],"length":1589,"saved":false}
+{"ts":1352493437165,"patch":[[{"diffs":[[0,"this app"],[1,"l"],[0,"</li>\r\n "]],"start1":1438,"start2":1438,"length1":16,"length2":17}]],"length":1590,"saved":false}
+{"ts":1352493437738,"patch":[[{"diffs":[[0,"his appl"],[1,"ic"],[0,"</li>\r\n "]],"start1":1439,"start2":1439,"length1":16,"length2":18}]],"length":1592,"saved":false}
+{"ts":1352493439038,"patch":[[{"diffs":[[0,"s applic"],[1,"ation."],[0,"</li>\r\n "]],"start1":1441,"start2":1441,"length1":16,"length2":22}]],"length":1598,"saved":false}
+{"ts":1352493445163,"patch":[[{"diffs":[[0,"     </ol>\r\n"],[1,"          \r\n"],[0,"        </di"]],"start1":1486,"start2":1486,"length1":24,"length2":36}]],"length":1610,"saved":false}
+{"ts":1352493447070,"patch":[[{"diffs":[[0,"\r\n          "],[1,"I"],[0,"\r\n        </"]],"start1":1496,"start2":1496,"length1":24,"length2":25}]],"length":1611,"saved":false}
+{"ts":1352493447942,"patch":[[{"diffs":[[0,"        "],[-1,"I"],[1,"<"],[0,"\r\n      "]],"start1":1500,"start2":1500,"length1":17,"length2":17}]],"length":1611,"saved":false}
+{"ts":1352493449221,"patch":[[{"diffs":[[0,"       <"],[1,"im"],[0,"\r\n      "]],"start1":1501,"start2":1501,"length1":16,"length2":18}]],"length":1613,"saved":false}
+{"ts":1352493450378,"patch":[[{"diffs":[[0,"     <im"],[1,"g"],[0,"\r\n      "]],"start1":1503,"start2":1503,"length1":16,"length2":17}]],"length":1614,"saved":false}
+{"ts":1352493452417,"patch":[[{"diffs":[[0,"    <img"],[1," "],[0,"\r\n      "]],"start1":1504,"start2":1504,"length1":16,"length2":17}]],"length":1615,"saved":false}
+{"ts":1352493454465,"patch":[[{"diffs":[[0,"   <img "],[1,"class"],[0,"\r\n      "]],"start1":1505,"start2":1505,"length1":16,"length2":21}]],"length":1620,"saved":false}
+{"ts":1352493457525,"patch":[[{"diffs":[[0,"mg class"],[1,"\"screen"],[0,"\r\n      "]],"start1":1510,"start2":1510,"length1":16,"length2":23}]],"length":1627,"saved":false}
+{"ts":1352493458700,"patch":[[{"diffs":[[0,"s\"screen"],[1,"shot"],[0,"\r\n      "]],"start1":1517,"start2":1517,"length1":16,"length2":20}]],"length":1631,"saved":false}
+{"ts":1352493459415,"patch":[[{"diffs":[[0,"reenshot"],[1," "],[0,"\r\n      "]],"start1":1521,"start2":1521,"length1":16,"length2":17}]],"length":1632,"saved":false}
+{"ts":1352493460548,"patch":[[{"diffs":[[0,"reenshot"],[1,"\""],[0," \r\n     "]],"start1":1521,"start2":1521,"length1":16,"length2":17}]],"length":1633,"saved":false}
+{"ts":1352493462096,"patch":[[{"diffs":[[0,"enshot\" "],[1,"s"],[0,"\r\n      "]],"start1":1523,"start2":1523,"length1":16,"length2":17}]],"length":1634,"saved":false}
+{"ts":1352493463937,"patch":[[{"diffs":[[0,"nshot\" s"],[1,"rc"],[0,"\r\n      "]],"start1":1524,"start2":1524,"length1":16,"length2":18}]],"length":1636,"saved":false}
+{"ts":1352493465318,"patch":[[{"diffs":[[0,"hot\" src"],[1,"=\""],[0,"\r\n      "]],"start1":1526,"start2":1526,"length1":16,"length2":18}]],"length":1638,"saved":false}
+{"ts":1352493469056,"patch":[[{"diffs":[[0,"t\" src=\""],[1,"css/images"],[0,"\r\n      "]],"start1":1528,"start2":1528,"length1":16,"length2":26}]],"length":1648,"saved":false}
+{"ts":1352493470169,"patch":[[{"diffs":[[0,"s/images"],[1,"/"],[0,"\r\n      "]],"start1":1538,"start2":1538,"length1":16,"length2":17}]],"length":1649,"saved":false}
+{"ts":1352493471368,"patch":[[{"diffs":[[0,"/images/"],[1,"scre"],[0,"\r\n      "]],"start1":1539,"start2":1539,"length1":16,"length2":20}]],"length":1653,"saved":false}
+{"ts":1352493473591,"patch":[[{"diffs":[[0,"ges/scre"],[1,"enshots"],[0,"\r\n      "]],"start1":1543,"start2":1543,"length1":16,"length2":23}]],"length":1660,"saved":false}
+{"ts":1352493474487,"patch":[[{"diffs":[[0,"eenshots"],[1,"/"],[0,"\r\n      "]],"start1":1550,"start2":1550,"length1":16,"length2":17}]],"length":1661,"saved":false}
+{"ts":1352493481403,"patch":[[{"diffs":[[0,"enshots/"],[1,"signi"],[0,"\r\n      "]],"start1":1551,"start2":1551,"length1":16,"length2":21}]],"length":1666,"saved":false}
+{"ts":1352493482367,"patch":[[{"diffs":[[0,"ts/signi"],[1,"n.p"],[0,"\r\n      "]],"start1":1556,"start2":1556,"length1":16,"length2":19}]],"length":1669,"saved":false}
+{"ts":1352493483593,"patch":[[{"diffs":[[0,"signin.p"],[1,"ng"],[0,"\r\n      "]],"start1":1559,"start2":1559,"length1":16,"length2":18}]],"length":1671,"saved":false}
+{"ts":1352493484819,"patch":[[{"diffs":[[0,"gnin.png"],[1,"\""],[0,"\r\n      "]],"start1":1561,"start2":1561,"length1":16,"length2":17}]],"length":1672,"saved":false}
+{"ts":1352493487595,"patch":[[{"diffs":[[0,"nin.png\""],[1,">"],[0,"\r\n      "]],"start1":1562,"start2":1562,"length1":16,"length2":17}]],"length":1673,"saved":false}
+{"ts":1352493490238,"patch":[[{"diffs":[[0,"nin.png\""],[1," alt"],[0,">\r\n     "]],"start1":1562,"start2":1562,"length1":16,"length2":20}]],"length":1677,"saved":false}
+{"ts":1352493491002,"patch":[[{"diffs":[[0,"png\" alt"],[1,"="],[0,">\r\n     "]],"start1":1566,"start2":1566,"length1":16,"length2":17}]],"length":1678,"saved":false}
+{"ts":1352493491652,"patch":[[{"diffs":[[0,"ng\" alt="],[1,"\""],[0,">\r\n     "]],"start1":1567,"start2":1567,"length1":16,"length2":17}]],"length":1679,"saved":false}
+{"ts":1352493493299,"patch":[[{"diffs":[[0,"g\" alt=\""],[1,"signo"],[0,">\r\n     "]],"start1":1568,"start2":1568,"length1":16,"length2":21}]],"length":1684,"saved":false}
+{"ts":1352493495838,"patch":[[{"diffs":[[0,"lt=\"sign"],[1," "],[0,"o>\r\n    "]],"start1":1572,"start2":1572,"length1":16,"length2":17}]],"length":1685,"saved":false}
+{"ts":1352493496789,"patch":[[{"diffs":[[0,"t=\"sign "],[-1,"o"],[1,"in"],[0,">\r\n     "]],"start1":1573,"start2":1573,"length1":17,"length2":18}]],"length":1686,"saved":false}
+{"ts":1352493497818,"patch":[[{"diffs":[[0,"\"sign in"],[1,"\""],[0,">\r\n     "]],"start1":1575,"start2":1575,"length1":16,"length2":17}]],"length":1687,"saved":false}
+{"ts":1352493553494,"patch":[[{"diffs":[[0,"images/s"],[-1,"c"],[0,"reenshot"]],"start1":1540,"start2":1540,"length1":17,"length2":16}]],"length":1686,"saved":false}
+{"ts":1352493758016,"patch":[[{"diffs":[[0,"mg class"],[1,"="],[0,"\"screens"]],"start1":1510,"start2":1510,"length1":16,"length2":17}]],"length":1687,"saved":false}
+{"ts":1352494361967,"patch":[[{"diffs":[[0,"    </div>\r\n"],[1,"        \r\n"],[0,"      </div>"]],"start1":1591,"start2":1591,"length1":24,"length2":34}]],"length":1697,"saved":false}
+{"ts":1352494363843,"patch":[[{"diffs":[[0,"\r\n        \r\n"],[1,"        \r\n"],[0,"      </div>"]],"start1":1601,"start2":1601,"length1":24,"length2":34}]],"length":1707,"saved":false}
+{"ts":1352494364873,"patch":[[{"diffs":[[0,"\r\n        \r\n"],[1,"        <div class=\"stepHeader\">Step 1: Sign into ArcGIS Online</div>\r\n        <div class=\"stepContent\">\r\n          <ol class=\"instructions\">\r\n            <li>In a new window, open <a class=\"noButton\" href=\"https://www.arcgis.com/home/signin.html?\" target=\"_blank\">ArcGIS Online</a>.</li>\r\n            <li>Sign into your ArcGiS Online account.</li>\r\n            <ul>\r\n              <li class=\"insetInstructions\">If you do not already have a ArcGIS Online account, create one now.</li>\r\n              <li class=\"insetInstructions\">Both the Personal Account and the Organizational Account will work for creating this application.</li>\r\n            </ul>\r\n          </ol>\r\n          <img class=\"screenshot\" src=\"css/images/sreenshots/signin.png\" alt=\"sign in\">\r\n        </div>\r\n"],[0,"        \r\n  "]],"start1":1601,"start2":1601,"length1":24,"length2":799}]],"length":2482,"saved":false}
+{"ts":1352494368263,"patch":[[{"diffs":[[0,"sWrapper\">\r\n"],[1,"      \r\n"],[0,"        <div"]],"start1":816,"start2":816,"length1":24,"length2":32}]],"length":2490,"saved":false}
+{"ts":1352494371271,"patch":[[{"diffs":[[0,"tepHeader\">Step "],[-1,"1"],[1,"2"],[0,": Sign into ArcG"]],"start1":1642,"start2":1642,"length1":33,"length2":33}]],"length":2490,"saved":false}
+{"ts":1352494377996,"patch":[[{"diffs":[[0,"Step 2: "],[-1,"Sign into ArcGIS Online"],[1,"Open a "],[0,"</div>\r\n"]],"start1":1653,"start2":1653,"length1":39,"length2":23}]],"length":2474,"saved":false}
+{"ts":1352494379504,"patch":[[{"diffs":[[0," Open a "],[1,"n"],[0,"</div>\r\n"]],"start1":1660,"start2":1660,"length1":16,"length2":17}]],"length":2475,"saved":false}
+{"ts":1352494381536,"patch":[[{"diffs":[[0," Open a "],[-1,"n"],[1,"NE"],[0,"</div>\r\n"]],"start1":1660,"start2":1660,"length1":17,"length2":18}]],"length":2476,"saved":false}
+{"ts":1352494381995,"patch":[[{"diffs":[[0,"Open a N"],[-1,"E"],[1,"we"],[0,"</div>\r\n"]],"start1":1661,"start2":1661,"length1":17,"length2":18}]],"length":2477,"saved":false}
+{"ts":1352494382625,"patch":[[{"diffs":[[0,"pen a Nw"],[-1,"e"],[0,"</div>\r\n"]],"start1":1662,"start2":1662,"length1":17,"length2":16}]],"length":2476,"saved":false}
+{"ts":1352494383579,"patch":[[{"diffs":[[0,"Open a N"],[-1,"w"],[1,"ewe"],[0,"</div>\r\n"]],"start1":1661,"start2":1661,"length1":17,"length2":19}]],"length":2478,"saved":false}
+{"ts":1352494384557,"patch":[[{"diffs":[[0,"en a New"],[-1,"e"],[1," "],[0,"</div>\r\n"]],"start1":1663,"start2":1663,"length1":17,"length2":17}]],"length":2478,"saved":false}
+{"ts":1352494386089,"patch":[[{"diffs":[[0,"n a New "],[1,"Map"],[0,"</div>\r\n"]],"start1":1664,"start2":1664,"length1":16,"length2":19}]],"length":2481,"saved":false}
+{"ts":1352494408022,"patch":[[{"diffs":[[0,"ages/sreenshots/"],[-1,"signin"],[1,"agolHo"],[0,".png\" alt=\"sign "]],"start1":2327,"start2":2327,"length1":38,"length2":38}]],"length":2481,"saved":false}
+{"ts":1352494408967,"patch":[[{"diffs":[[0,"s/agolHo"],[1,"me"],[0,".png\" al"]],"start1":2341,"start2":2341,"length1":16,"length2":18}]],"length":2483,"saved":false}
+{"ts":1352494415242,"patch":[[{"diffs":[[0,"lHome.png\" alt=\""],[-1,"sign in"],[1,"home"],[0,"\">\r\n        </di"]],"start1":2346,"start2":2346,"length1":39,"length2":36}]],"length":2480,"saved":false}
+{"ts":1352494430428,"patch":[[{"diffs":[[0,"t\">\r\n          <"],[-1,"o"],[1,"u"],[0,"l class=\"instruc"]],"start1":937,"start2":937,"length1":33,"length2":33}]],"length":2480,"saved":false}
+{"ts":1352494433152,"patch":[[{"diffs":[[0,"l>\r\n          </"],[-1,"o"],[1,"u"],[0,"l>\r\n          <i"]],"start1":1485,"start2":1485,"length1":33,"length2":33}]],"length":2480,"saved":false}
+{"ts":1352494436332,"patch":[[{"diffs":[[0,"       <"],[-1,"o"],[1,"u"],[0,"l class="]],"start1":1721,"start2":1721,"length1":17,"length2":17}]],"length":2480,"saved":false}
+{"ts":1352494439103,"patch":[[{"diffs":[[0,"      </"],[-1,"o"],[1,"u"],[0,"l>\r\n    "]],"start1":2269,"start2":2269,"length1":17,"length2":17}]],"length":2480,"saved":false}
+{"ts":1352494447090,"patch":[[{"diffs":[[0,"i>\r\n"],[-1,"            <ul>\r\n              <li class=\"insetInstructions\">If you do not already have a ArcGIS Online account, create one now.</li>\r\n              <li class=\"insetInstructions\">Both the Personal Account and the Organizational Account will work for creating this application.</li>\r\n            </ul>\r\n"],[0,"    "]],"start1":1958,"start2":1958,"length1":311,"length2":8}]],"length":2177,"saved":false}
+{"ts":1352494451756,"patch":[[{"diffs":[[0,"i>\r\n"],[-1,"            <li>Sign into your ArcGiS Online account.</li>\r\n"],[0,"    "]],"start1":1898,"start2":1898,"length1":68,"length2":8}]],"length":2117,"saved":false}
+{"ts":1352494463067,"patch":[[{"diffs":[[0,">In "],[-1,"a new window, open <a class=\"noButton\" href=\"https://www.arcgis.com/home/signin.html?\" target=\"_blank\">ArcGIS Online</a>."],[1,"the "],[0,"</li"]],"start1":1770,"start2":1770,"length1":129,"length2":12}]],"length":2000,"saved":false}
+{"ts":1352494464367,"patch":[[{"diffs":[[0,">In the "],[1,"top "],[0,"</li>\r\n "]],"start1":1770,"start2":1770,"length1":16,"length2":20}]],"length":2004,"saved":false}
+{"ts":1352494466202,"patch":[[{"diffs":[[0,"the top "],[1,"lef"],[0,"</li>\r\n "]],"start1":1774,"start2":1774,"length1":16,"length2":19}]],"length":2007,"saved":false}
+{"ts":1352494469583,"patch":[[{"diffs":[[0," top lef"],[1,"t corner, "],[0,"</li>\r\n "]],"start1":1777,"start2":1777,"length1":16,"length2":26}]],"length":2017,"saved":false}
+{"ts":1352494470033,"patch":[[{"diffs":[[0,"corner, "],[1,"c"],[0,"</li>\r\n "]],"start1":1787,"start2":1787,"length1":16,"length2":17}]],"length":2018,"saved":false}
+{"ts":1352494471570,"patch":[[{"diffs":[[0,"orner, c"],[1,"lick"],[0,"</li>\r\n "]],"start1":1788,"start2":1788,"length1":16,"length2":20}]],"length":2022,"saved":false}
+{"ts":1352494473613,"patch":[[{"diffs":[[0,"r, click"],[1," on "],[0,"</li>\r\n "]],"start1":1792,"start2":1792,"length1":16,"length2":20}]],"length":2026,"saved":false}
+{"ts":1352494475415,"patch":[[{"diffs":[[0,"lick on "],[1,"\"Map "],[0,"</li>\r\n "]],"start1":1796,"start2":1796,"length1":16,"length2":21}]],"length":2031,"saved":false}
+{"ts":1352494475846,"patch":[[{"diffs":[[0," on \"Map"],[-1," "],[0,"</li>\r\n "]],"start1":1800,"start2":1800,"length1":17,"length2":16}]],"length":2030,"saved":false}
+{"ts":1352494477657,"patch":[[{"diffs":[[0," on \"Map"],[1,"\" to b"],[0,"</li>\r\n "]],"start1":1800,"start2":1800,"length1":16,"length2":22}]],"length":2036,"saved":false}
+{"ts":1352494478649,"patch":[[{"diffs":[[0,"ap\" to b"],[1,"egin"],[0,"</li>\r\n "]],"start1":1806,"start2":1806,"length1":16,"length2":20}]],"length":2040,"saved":false}
+{"ts":1352494480009,"patch":[[{"diffs":[[0,"to begin"],[1," a "],[0,"</li>\r\n "]],"start1":1810,"start2":1810,"length1":16,"length2":19}]],"length":2043,"saved":false}
+{"ts":1352494480978,"patch":[[{"diffs":[[0,"begin a "],[1,"new "],[0,"</li>\r\n "]],"start1":1813,"start2":1813,"length1":16,"length2":20}]],"length":2047,"saved":false}
+{"ts":1352494483347,"patch":[[{"diffs":[[0,"n a new "],[1,"proj"],[0,"</li>\r\n "]],"start1":1817,"start2":1817,"length1":16,"length2":20}]],"length":2051,"saved":false}
+{"ts":1352494485249,"patch":[[{"diffs":[[0,"new proj"],[1,"ec"],[0,"</li>\r\n "]],"start1":1821,"start2":1821,"length1":16,"length2":18}]],"length":2053,"saved":false}
+{"ts":1352494485689,"patch":[[{"diffs":[[0,"w projec"],[1,"t"],[0,"</li>\r\n "]],"start1":1823,"start2":1823,"length1":16,"length2":17}]],"length":2054,"saved":false}
+{"ts":1352494486619,"patch":[[{"diffs":[[0," project"],[1,"."],[0,"</li>\r\n "]],"start1":1824,"start2":1824,"length1":16,"length2":17}]],"length":2055,"saved":false}
+{"ts":1352494878025,"patch":[[{"diffs":[[0,"top "],[-1,"left corner"],[1,"me"],[0,", cl"]],"start1":1778,"start2":1778,"length1":19,"length2":10}]],"length":2046,"saved":false}
+{"ts":1352494879156,"patch":[[{"diffs":[[0,"e top me"],[1,"nu "],[0,", click "]],"start1":1776,"start2":1776,"length1":16,"length2":19}]],"length":2049,"saved":false}
+{"ts":1352494879674,"patch":[[{"diffs":[[0,"op menu "],[1,"b"],[0,", click "]],"start1":1779,"start2":1779,"length1":16,"length2":17}]],"length":2050,"saved":false}
+{"ts":1352494880861,"patch":[[{"diffs":[[0,"p menu b"],[1,"ar"],[0,", click "]],"start1":1780,"start2":1780,"length1":16,"length2":18}]],"length":2052,"saved":false}
+{"ts":1352494887039,"patch":[[{"diffs":[[0,"ck on \"M"],[-1,"ap"],[1,"AP"],[0,"\" to beg"]],"start1":1795,"start2":1795,"length1":18,"length2":18}]],"length":2052,"saved":false}
+{"ts":1352494899794,"patch":[[{"diffs":[[0,"\r\n        \r\n"],[1,"        <div class=\"stepHeader\">Step 2: Open a New Map</div>\r\n        <div class=\"stepContent\">\r\n          <ul class=\"instructions\">\r\n            <li>In the top menu bar, click on \"MAP\" to begin a new project.</li>\r\n          </ul>\r\n          <img class=\"screenshot\" src=\"css/images/sreenshots/agolHome.png\" alt=\"home\">\r\n        </div>\r\n        \r\n"],[0,"      </div>"]],"start1":1956,"start2":1956,"length1":24,"length2":371}]],"length":2399,"saved":false}
+{"ts":1352494905265,"patch":[[{"diffs":[[0,"tepHeader\">Step "],[-1,"2"],[1,"3"],[0,": Open a New Map"]],"start1":1989,"start2":1989,"length1":33,"length2":33}]],"length":2399,"saved":false}
+{"ts":1352495001117,"patch":[[{"diffs":[[0,"Step 3: "],[-1,"Open a New Map"],[1,"Cha"],[0,"</div>\r\n"]],"start1":2000,"start2":2000,"length1":30,"length2":19}]],"length":2388,"saved":false}
+{"ts":1352495002874,"patch":[[{"diffs":[[0," 3: "],[-1,"Cha"],[0,"</di"]],"start1":2004,"start2":2004,"length1":11,"length2":8}]],"length":2385,"saved":false}
+{"ts":1352495005301,"patch":[[{"diffs":[[0,">Step 3:"],[1," Choose a"],[0," </div>\r"]],"start1":1999,"start2":1999,"length1":16,"length2":25}]],"length":2394,"saved":false}
+{"ts":1352495007702,"patch":[[{"diffs":[[0,"hoose a "],[1,"Ba"],[0,"</div>\r\n"]],"start1":2009,"start2":2009,"length1":16,"length2":18}]],"length":2396,"saved":false}
+{"ts":1352495008732,"patch":[[{"diffs":[[0,"ose a Ba"],[1,"sem"],[0,"</div>\r\n"]],"start1":2011,"start2":2011,"length1":16,"length2":19}]],"length":2399,"saved":false}
+{"ts":1352495009654,"patch":[[{"diffs":[[0," a Basem"],[1,"ap"],[0,"</div>\r\n"]],"start1":2014,"start2":2014,"length1":16,"length2":18}]],"length":2401,"saved":false}
+{"ts":1352495027091,"patch":[[{"diffs":[[0,"/sreenshots/"],[-1,"agolHome"],[1,"based"],[0,".png\" alt=\"h"]],"start1":2252,"start2":2252,"length1":32,"length2":29}]],"length":2398,"saved":false}
+{"ts":1352495028133,"patch":[[{"diffs":[[0,"ots/base"],[-1,"d"],[0,".png\" al"]],"start1":2260,"start2":2260,"length1":17,"length2":16}]],"length":2397,"saved":false}
+{"ts":1352495029677,"patch":[[{"diffs":[[0,"ots/base"],[1,"map"],[0,".png\" al"]],"start1":2260,"start2":2260,"length1":16,"length2":19}]],"length":2400,"saved":false}
+{"ts":1352495041748,"patch":[[{"diffs":[[0,"\r\n        \r\n"],[1,"        <div class=\"stepHeader\">Step 3: Choose a Basemap</div>\r\n        <div class=\"stepContent\">\r\n          <ul class=\"instructions\">\r\n            <li>In the top menu bar, click on \"MAP\" to begin a new project.</li>\r\n          </ul>\r\n          <img class=\"screenshot\" src=\"css/images/sreenshots/basemap.png\" alt=\"home\">\r\n        </div>\r\n        \r\n"],[0,"      </div>"]],"start1":2304,"start2":2304,"length1":24,"length2":372}]],"length":2748,"saved":false}
+{"ts":1352495047210,"patch":[[{"diffs":[[0,"Step 3: "],[-1,"Choose a Basemap"],[1,"Add "],[0,"</div>\r\n"]],"start1":2348,"start2":2348,"length1":32,"length2":20}]],"length":2736,"saved":false}
+{"ts":1352495051651,"patch":[[{"diffs":[[0," 3: Add "],[1,"Your C"],[0,"</div>\r\n"]],"start1":2352,"start2":2352,"length1":16,"length2":22}]],"length":2742,"saved":false}
+{"ts":1352495053168,"patch":[[{"diffs":[[0,"d Your C"],[1,"SV "],[0,"</div>\r\n"]],"start1":2358,"start2":2358,"length1":16,"length2":19}]],"length":2745,"saved":false}
+{"ts":1352495060816,"patch":[[{"diffs":[[0,"our CSV "],[1,"File"],[0,"</div>\r\n"]],"start1":2361,"start2":2361,"length1":16,"length2":20}]],"length":2749,"saved":false}
+{"ts":1352495065608,"patch":[[{"diffs":[[0,"r\">Step "],[-1,"3"],[1,"4"],[0,": Add Yo"]],"start1":2345,"start2":2345,"length1":17,"length2":17}]],"length":2749,"saved":false}
+{"ts":1352495072056,"patch":[[{"diffs":[[0,"ages/sreenshots/"],[-1,"basemap"],[1,"add"],[0,".png\" alt=\"home\""]],"start1":2597,"start2":2597,"length1":39,"length2":35}]],"length":2745,"saved":false}
+{"ts":1352495082597,"patch":[[{"diffs":[[0,"g\" alt=\"home\">\r\n"],[1,"          <img class=\"screenshot\" src=\"css/images/sreenshots/add.png\" alt=\"home\">\r\n"],[0,"        </div>\r\n"]],"start1":2619,"start2":2619,"length1":32,"length2":115}]],"length":2828,"saved":false}
+{"ts":1352495088187,"patch":[[{"diffs":[[0,"ages/sreenshots/"],[-1,"add"],[1,"impo"],[0,".png\" alt=\"home\""]],"start1":2680,"start2":2680,"length1":35,"length2":36}]],"length":2829,"saved":false}
+{"ts":1352495089293,"patch":[[{"diffs":[[0,"ots/impo"],[1,"rt"],[0,".png\" al"]],"start1":2692,"start2":2692,"length1":16,"length2":18}]],"length":2831,"saved":false}
+{"ts":1352495106796,"patch":[[{"diffs":[[0,"\r\n        \r\n"],[1,"        <div class=\"stepHeader\">Step 4: Add Your CSV File</div>\r\n        <div class=\"stepContent\">\r\n          <ul class=\"instructions\">\r\n            <li>In the top menu bar, click on \"MAP\" to begin a new project.</li>\r\n          </ul>\r\n          <img class=\"screenshot\" src=\"css/images/sreenshots/add.png\" alt=\"home\">\r\n          <img class=\"screenshot\" src=\"css/images/sreenshots/import.png\" alt=\"home\">\r\n        </div>\r\n        \r\n"],[0,"      </div>"]],"start1":2735,"start2":2735,"length1":24,"length2":455}]],"length":3262,"saved":false}
+{"ts":1352495110253,"patch":[[{"diffs":[[0,"tepHeader\">Step "],[-1,"4"],[1,"5"],[0,": Add Your CSV F"]],"start1":2768,"start2":2768,"length1":33,"length2":33}]],"length":3262,"saved":false}
+{"ts":1352495114273,"patch":[[{"diffs":[[0,"Step 5: "],[-1,"Add Your CSV Fil"],[1,"Sav"],[0,"e</div>\r"]],"start1":2779,"start2":2779,"length1":32,"length2":19}]],"length":3249,"saved":false}
+{"ts":1352495117055,"patch":[[{"diffs":[[0," 5: Save"],[1," Your Map"],[0,"</div>\r\n"]],"start1":2783,"start2":2783,"length1":16,"length2":25}]],"length":3258,"saved":false}
+{"ts":1352495122176,"patch":[[{"diffs":[[0,"ages/sreenshots/"],[-1,"add"],[1,"save"],[0,".png\" alt=\"home\""]],"start1":3024,"start2":3024,"length1":35,"length2":36}]],"length":3259,"saved":false}
+{"ts":1352495125087,"patch":[[{"diffs":[[0,"ages/sreenshots/"],[-1,"import"],[1,"save"],[0,".png\" alt=\"home\""]],"start1":3108,"start2":3108,"length1":38,"length2":36}]],"length":3257,"saved":false}
+{"ts":1352495127335,"patch":[[{"diffs":[[0,"/sreenshots/save"],[1,"Dia"],[0,".png\" alt=\"home\""]],"start1":3112,"start2":3112,"length1":32,"length2":35}]],"length":3260,"saved":false}
+{"ts":1352495128940,"patch":[[{"diffs":[[0,"/saveDia"],[1,"lo"],[0,".png\" al"]],"start1":3123,"start2":3123,"length1":16,"length2":18}]],"length":3262,"saved":false}
+{"ts":1352495129768,"patch":[[{"diffs":[[0,"aveDialo"],[1,"g"],[0,".png\" al"]],"start1":3125,"start2":3125,"length1":16,"length2":17}]],"length":3263,"saved":false}
+{"ts":1352495198089,"patch":[[{"diffs":[[0,"\r\n        \r\n"],[1,"        <div class=\"stepHeader\">Step 5: Save Your Map</div>\r\n        <div class=\"stepContent\">\r\n          <ul class=\"instructions\">\r\n            <li>In the top menu bar, click on \"MAP\" to begin a new project.</li>\r\n          </ul>\r\n          <img class=\"screenshot\" src=\"css/images/sreenshots/save.png\" alt=\"home\">\r\n          <img class=\"screenshot\" src=\"css/images/sreenshots/saveDialog.png\" alt=\"home\">\r\n        </div>\r\n        \r\n"],[0,"      </div>"]],"start1":3167,"start2":3167,"length1":24,"length2":456}]],"length":3695,"saved":false}
+{"ts":1352495201800,"patch":[[{"diffs":[[0,"tepHeader\">Step "],[-1,"5"],[1,"^"],[0,": Save Your Map<"]],"start1":3200,"start2":3200,"length1":33,"length2":33}]],"length":3695,"saved":false}
+{"ts":1352495202984,"patch":[[{"diffs":[[0,"tep "],[-1,"^"],[1,"6"],[0,": Sa"]],"start1":3212,"start2":3212,"length1":9,"length2":9}]],"length":3695,"saved":false}
+{"ts":1352495206734,"patch":[[{"diffs":[[0,"Step 6: "],[-1,"Save Your Map"],[1,"Laun"],[0,"</div>\r\n"]],"start1":3211,"start2":3211,"length1":29,"length2":20}]],"length":3686,"saved":false}
+{"ts":1352495207770,"patch":[[{"diffs":[[0," 6: Laun"],[1,"ch "],[0,"</div>\r\n"]],"start1":3215,"start2":3215,"length1":16,"length2":19}]],"length":3689,"saved":false}
+{"ts":1352495208452,"patch":[[{"diffs":[[0," Launch "],[1,"A"],[0,"</div>\r\n"]],"start1":3218,"start2":3218,"length1":16,"length2":17}]],"length":3690,"saved":false}
+{"ts":1352495208965,"patch":[[{"diffs":[[0,"Launch A"],[1,"p"],[0,"</div>\r\n"]],"start1":3219,"start2":3219,"length1":16,"length2":17}]],"length":3691,"saved":false}
+{"ts":1352495210312,"patch":[[{"diffs":[[0,"aunch Ap"],[1,"plic"],[0,"</div>\r\n"]],"start1":3220,"start2":3220,"length1":16,"length2":20}]],"length":3695,"saved":false}
+{"ts":1352495211400,"patch":[[{"diffs":[[0,"h Applic"],[1,"ta"],[0,"</div>\r\n"]],"start1":3224,"start2":3224,"length1":16,"length2":18}]],"length":3697,"saved":false}
+{"ts":1352495212501,"patch":[[{"diffs":[[0,"h Applic"],[-1,"t"],[0,"a"],[1,"t"],[0,"</div>\r\n"]],"start1":3224,"start2":3224,"length1":18,"length2":18}]],"length":3697,"saved":false}
+{"ts":1352495213617,"patch":[[{"diffs":[[0,"Applicat"],[1,"ion"],[0,"</div>\r\n"]],"start1":3226,"start2":3226,"length1":16,"length2":19}]],"length":3700,"saved":false}
+{"ts":1352495219647,"patch":[[{"diffs":[[0,"\">\r\n"],[-1,"          <img class=\"screenshot\" src=\"css/images/sreenshots/saveDialog.png\" alt=\"home\">\r\n"],[0,"    "]],"start1":3496,"start2":3496,"length1":98,"length2":8}]],"length":3610,"saved":false}
+{"ts":1352495222304,"patch":[[{"diffs":[[0,"ages/sreenshots/"],[-1,"save"],[1,"url"],[0,".png\" alt=\"home\""]],"start1":3461,"start2":3461,"length1":36,"length2":35}]],"length":3609,"saved":false}
+{"ts":1352495433611,"patch":[[{"diffs":[[0," bar, click on \""],[-1,"MAP"],[1,"Bas"],[0,"\" to begin a new"]],"start1":2135,"start2":2135,"length1":35,"length2":35}]],"length":3609,"saved":false}
+{"ts":1352495435078,"patch":[[{"diffs":[[0," on \"Bas"],[1,"emap"],[0,"\" to beg"]],"start1":2146,"start2":2146,"length1":16,"length2":20}]],"length":3613,"saved":false}
+{"ts":1352495479744,"patch":[[{"diffs":[[0,"semap\" t"],[-1,"o begin a new project."],[1,"hen "],[0,"</li>\r\n "]],"start1":2153,"start2":2153,"length1":38,"length2":20}]],"length":3595,"saved":false}
+{"ts":1352495482592,"patch":[[{"diffs":[[0,"p\" then "],[1,"choose"],[0,"</li>\r\n "]],"start1":2157,"start2":2157,"length1":16,"length2":22}]],"length":3601,"saved":false}
+{"ts":1352495483801,"patch":[[{"diffs":[[0,"n choose"],[1," a"],[0,"</li>\r\n "]],"start1":2163,"start2":2163,"length1":16,"length2":18}]],"length":3603,"saved":false}
+{"ts":1352495484907,"patch":[[{"diffs":[[0,"choose a"],[1," "],[0,"</li>\r\n "]],"start1":2165,"start2":2165,"length1":16,"length2":17}]],"length":3604,"saved":false}
+{"ts":1352495485951,"patch":[[{"diffs":[[0,"hoose a "],[1,"bas"],[0,"</li>\r\n "]],"start1":2166,"start2":2166,"length1":16,"length2":19}]],"length":3607,"saved":false}
+{"ts":1352495486750,"patch":[[{"diffs":[[0,"se a bas"],[1,"e"],[0,"</li>\r\n "]],"start1":2169,"start2":2169,"length1":16,"length2":17}]],"length":3608,"saved":false}
+{"ts":1352495487276,"patch":[[{"diffs":[[0,"e a base"],[1,"ma"],[0,"</li>\r\n "]],"start1":2170,"start2":2170,"length1":16,"length2":18}]],"length":3610,"saved":false}
+{"ts":1352495488210,"patch":[[{"diffs":[[0,"a basema"],[1,"p f"],[0,"</li>\r\n "]],"start1":2172,"start2":2172,"length1":16,"length2":19}]],"length":3613,"saved":false}
+{"ts":1352495490267,"patch":[[{"diffs":[[0,"asemap f"],[1,"or your "],[0,"</li>\r\n "]],"start1":2175,"start2":2175,"length1":16,"length2":24}]],"length":3621,"saved":false}
+{"ts":1352495491677,"patch":[[{"diffs":[[0,"or your "],[1,"qui"],[0,"</li>\r\n "]],"start1":2183,"start2":2183,"length1":16,"length2":19}]],"length":3624,"saved":false}
+{"ts":1352495492690,"patch":[[{"diffs":[[0,"your qui"],[1,"z"],[0,"</li>\r\n "]],"start1":2186,"start2":2186,"length1":16,"length2":17}]],"length":3625,"saved":false}
+{"ts":1352495493617,"patch":[[{"diffs":[[0,"our quiz"],[1,"."],[0,"</li>\r\n "]],"start1":2187,"start2":2187,"length1":16,"length2":17}]],"length":3626,"saved":false}
+{"ts":1352495526571,"patch":[[{"diffs":[[0," bar, click on \""],[-1,"MAP"],[1,"Add"],[0,"\" to begin a new"]],"start1":2501,"start2":2501,"length1":35,"length2":35}]],"length":3626,"saved":false}
+{"ts":1352495533699,"patch":[[{"diffs":[[0," \"Add\" t"],[-1,"o begin a new project.<"],[1,"hen choose"],[0,"/li>\r\n  "]],"start1":2515,"start2":2515,"length1":39,"length2":26}]],"length":3613,"saved":false}
+{"ts":1352495534982,"patch":[[{"diffs":[[0,"n choose"],[1," \""],[0,"/li>\r\n  "]],"start1":2525,"start2":2525,"length1":16,"length2":18}]],"length":3615,"saved":false}
+{"ts":1352495538981,"patch":[[{"diffs":[[0,"choose \""],[1,"<"],[0,"/li>\r\n  "]],"start1":2527,"start2":2527,"length1":16,"length2":17}]],"length":3616,"saved":false}
+{"ts":1352495540931,"patch":[[{"diffs":[[0,"choose \""],[1,"Add "],[0,"</li>\r\n "]],"start1":2527,"start2":2527,"length1":16,"length2":20}]],"length":3620,"saved":false}
+{"ts":1352495544047,"patch":[[{"diffs":[[0,"se \"Add "],[1,"Layer "],[0,"</li>\r\n "]],"start1":2531,"start2":2531,"length1":16,"length2":22}]],"length":3626,"saved":false}
+{"ts":1352495545814,"patch":[[{"diffs":[[0,"d Layer "],[1,"from "],[0,"</li>\r\n "]],"start1":2537,"start2":2537,"length1":16,"length2":21}]],"length":3631,"saved":false}
+{"ts":1352495547034,"patch":[[{"diffs":[[0,"er from "],[1,"file"],[0,"</li>\r\n "]],"start1":2542,"start2":2542,"length1":16,"length2":20}]],"length":3635,"saved":false}
+{"ts":1352495549798,"patch":[[{"diffs":[[0,"rom "],[-1,"f"],[1,"F"],[0,"ile"],[1,"\""],[0,"</li"]],"start1":2546,"start2":2546,"length1":12,"length2":13}]],"length":3636,"saved":false}
+{"ts":1352495557640,"patch":[[{"diffs":[[0,"File\"</li>\r\n"],[1,"            <li>In the top menu bar, click on \"Add\" then choose \"Add Layer from File\"</li>\r\n"],[0,"          </"]],"start1":2550,"start2":2550,"length1":24,"length2":116}]],"length":3728,"saved":false}
+{"ts":1352495563276,"patch":[[{"diffs":[[0,"the "],[-1,"top menu bar, click on \"Add\" then choose \"Add Layer from File\""],[0,"</li"]],"start1":2581,"start2":2581,"length1":70,"length2":8}]],"length":3666,"saved":false}
+{"ts":1352495564563,"patch":[[{"diffs":[[0,">In the "],[1,"dia"],[0,"</li>\r\n "]],"start1":2577,"start2":2577,"length1":16,"length2":19}]],"length":3669,"saved":false}
+{"ts":1352495566013,"patch":[[{"diffs":[[0," the dia"],[1,"log "],[0,"</li>\r\n "]],"start1":2580,"start2":2580,"length1":16,"length2":20}]],"length":3673,"saved":false}
+{"ts":1352495566782,"patch":[[{"diffs":[[0," dialog "],[1,"box"],[0,"</li>\r\n "]],"start1":2584,"start2":2584,"length1":16,"length2":19}]],"length":3676,"saved":false}
+{"ts":1352495569761,"patch":[[{"diffs":[[0,"alog box"],[1,","],[0,"</li>\r\n "]],"start1":2587,"start2":2587,"length1":16,"length2":17}]],"length":3677,"saved":false}
+{"ts":1352495571475,"patch":[[{"diffs":[[0,"log box,"],[1," "],[0,"</li>\r\n "]],"start1":2588,"start2":2588,"length1":16,"length2":17}]],"length":3678,"saved":false}
+{"ts":1352495572757,"patch":[[{"diffs":[[0,"og box, "],[1,"cho"],[0,"</li>\r\n "]],"start1":2589,"start2":2589,"length1":16,"length2":19}]],"length":3681,"saved":false}
+{"ts":1352495574439,"patch":[[{"diffs":[[0,"box, cho"],[1,"ose"],[0,"</li>\r\n "]],"start1":2592,"start2":2592,"length1":16,"length2":19}]],"length":3684,"saved":false}
+{"ts":1352495585516,"patch":[[{"diffs":[[0,"g box, c"],[-1,"hoose"],[0,"</li>\r\n "]],"start1":2590,"start2":2590,"length1":21,"length2":16}]],"length":3679,"saved":false}
+{"ts":1352495587110,"patch":[[{"diffs":[[0,"og box, "],[1,"cli"],[0,"c</li>\r\n"]],"start1":2589,"start2":2589,"length1":16,"length2":19}]],"length":3682,"saved":false}
+{"ts":1352495588203,"patch":[[{"diffs":[[0,"ox, clic"],[1,"k "],[0,"</li>\r\n "]],"start1":2593,"start2":2593,"length1":16,"length2":18}]],"length":3684,"saved":false}
+{"ts":1352495589824,"patch":[[{"diffs":[[0,", click "],[1,"choose"],[0,"</li>\r\n "]],"start1":2595,"start2":2595,"length1":16,"length2":22}]],"length":3690,"saved":false}
+{"ts":1352495596065,"patch":[[{"diffs":[[0,", click "],[-1,"c"],[1,"\"C"],[0,"hoose"],[1," F"],[0,"</li>\r\n "]],"start1":2595,"start2":2595,"length1":22,"length2":25}]],"length":3693,"saved":false}
+{"ts":1352495597260,"patch":[[{"diffs":[[0,"Choose F"],[1,"ile\""],[0,"</li>\r\n "]],"start1":2604,"start2":2604,"length1":16,"length2":20}]],"length":3697,"saved":false}
+{"ts":1352495598489,"patch":[[{"diffs":[[0,"Choose File\""],[1," "],[0,"</li>\r\n     "]],"start1":2604,"start2":2604,"length1":24,"length2":25}]],"length":3698,"saved":false}
+{"ts":1352495601507,"patch":[[{"diffs":[[0,"se File\""],[1," to upload"],[0," </li>\r\n"]],"start1":2608,"start2":2608,"length1":16,"length2":26}]],"length":3708,"saved":false}
+{"ts":1352495602165,"patch":[[{"diffs":[[0," upload "],[1,"th"],[0,"</li>\r\n "]],"start1":2619,"start2":2619,"length1":16,"length2":18}]],"length":3710,"saved":false}
+{"ts":1352495603192,"patch":[[{"diffs":[[0,"pload th"],[1,"e C"],[0,"</li>\r\n "]],"start1":2621,"start2":2621,"length1":16,"length2":19}]],"length":3713,"saved":false}
+{"ts":1352495604249,"patch":[[{"diffs":[[0,"ad the C"],[1,"SV "],[0,"</li>\r\n "]],"start1":2624,"start2":2624,"length1":16,"length2":19}]],"length":3716,"saved":false}
+{"ts":1352495606500,"patch":[[{"diffs":[[0,"the CSV "],[1,"you just "],[0,"</li>\r\n "]],"start1":2627,"start2":2627,"length1":16,"length2":25}]],"length":3725,"saved":false}
+{"ts":1352495609961,"patch":[[{"diffs":[[0,"ou just "],[1,"downloaded"],[0,"</li>\r\n "]],"start1":2636,"start2":2636,"length1":16,"length2":26}]],"length":3735,"saved":false}
+{"ts":1352495620566,"patch":[[{"diffs":[[0,"oaded</li>\r\n"],[1,"            <ul>\r\n              <li class=\"insetInstructions\">If you do not already have a ArcGIS Online account, create one now.</li>\r\n              <li class=\"insetInstructions\">Both the Personal Account and the Organizational Account will work for creating this application.</li>\r\n            </ul>\r\n"],[0,"          </"]],"start1":2649,"start2":2649,"length1":24,"length2":327}]],"length":4038,"saved":false}
+{"ts":1352495623620,"patch":[[{"diffs":[[0,"i>\r\n"],[-1,"              <li class=\"insetInstructions\">Both the Personal Account and the Organizational Account will work for creating this application.</li>\r\n"],[0,"    "]],"start1":2793,"start2":2793,"length1":156,"length2":8}]],"length":3890,"saved":false}
+{"ts":1352495629394,"patch":[[{"diffs":[[0,"ns\">"],[-1,"If you do not already have a ArcGIS Online account, create one now."],[1,"The "],[0,"</li"]],"start1":2719,"start2":2719,"length1":75,"length2":12}]],"length":3827,"saved":false}
+{"ts":1352495630664,"patch":[[{"diffs":[[0,"ns\">The "],[1,"CS"],[0,"</li>\r\n "]],"start1":2719,"start2":2719,"length1":16,"length2":18}]],"length":3829,"saved":false}
+{"ts":1352495633125,"patch":[[{"diffs":[[0,"\">The CS"],[1,"V file "],[0,"</li>\r\n "]],"start1":2721,"start2":2721,"length1":16,"length2":23}]],"length":3836,"saved":false}
+{"ts":1352495634570,"patch":[[{"diffs":[[0,"SV file "],[1,"will m"],[0,"</li>\r\n "]],"start1":2728,"start2":2728,"length1":16,"length2":22}]],"length":3842,"saved":false}
+{"ts":1352495635737,"patch":[[{"diffs":[[0,"e will m"],[1,"ost"],[0,"</li>\r\n "]],"start1":2734,"start2":2734,"length1":16,"length2":19}]],"length":3845,"saved":false}
+{"ts":1352495637742,"patch":[[{"diffs":[[0,"ill most"],[1," lik"],[0,"</li>\r\n "]],"start1":2737,"start2":2737,"length1":16,"length2":20}]],"length":3849,"saved":false}
+{"ts":1352495638471,"patch":[[{"diffs":[[0,"most lik"],[1,"e"],[0,"</li>\r\n "]],"start1":2741,"start2":2741,"length1":16,"length2":17}]],"length":3850,"saved":false}
+{"ts":1352495639164,"patch":[[{"diffs":[[0,"ost like"],[1,"ly"],[0,"</li>\r\n "]],"start1":2742,"start2":2742,"length1":16,"length2":18}]],"length":3852,"saved":false}
+{"ts":1352495642409,"patch":[[{"diffs":[[0,"t likely"],[1," be in your "],[0,"</li>\r\n "]],"start1":2744,"start2":2744,"length1":16,"length2":28}]],"length":3864,"saved":false}
+{"ts":1352495645536,"patch":[[{"diffs":[[0,"in your "],[1,"\"D"],[0,"</li>\r\n "]],"start1":2756,"start2":2756,"length1":16,"length2":18}]],"length":3866,"saved":false}
+{"ts":1352495647534,"patch":[[{"diffs":[[0,"our "],[-1,"\"D"],[0,"</li"]],"start1":2760,"start2":2760,"length1":10,"length2":8}]],"length":3864,"saved":false}
+{"ts":1352495649235,"patch":[[{"diffs":[[0,"in your "],[1,"Do"],[0,"</li>\r\n "]],"start1":2756,"start2":2756,"length1":16,"length2":18}]],"length":3866,"saved":false}
+{"ts":1352495652878,"patch":[[{"diffs":[[0," your Do"],[1,"wnloads"],[0,"</li>\r\n "]],"start1":2758,"start2":2758,"length1":16,"length2":23}]],"length":3873,"saved":false}
+{"ts":1352495656695,"patch":[[{"diffs":[[0,"ownloads"],[1,"\""],[0,"</li>\r\n "]],"start1":2765,"start2":2765,"length1":16,"length2":17}]],"length":3874,"saved":false}
+{"ts":1352495658679,"patch":[[{"diffs":[[0,"in your "],[1,"\""],[0,"Download"]],"start1":2756,"start2":2756,"length1":16,"length2":17}]],"length":3875,"saved":false}
+{"ts":1352495662070,"patch":[[{"diffs":[[0,"wnloads\""],[1," folder"],[0,"</li>\r\n "]],"start1":2767,"start2":2767,"length1":16,"length2":23}]],"length":3882,"saved":false}
+{"ts":1352495665278,"patch":[[{"diffs":[[0,"in your "],[1,"com "],[0,"\"Downloa"]],"start1":2756,"start2":2756,"length1":16,"length2":20}]],"length":3886,"saved":false}
+{"ts":1352495667499,"patch":[[{"diffs":[[0,"your com"],[1,"puter"],[0," \"Downlo"]],"start1":2759,"start2":2759,"length1":16,"length2":21}]],"length":3891,"saved":false}
+{"ts":1352495669302,"patch":[[{"diffs":[[0,"computer"],[1,"'s"],[0," \"Downlo"]],"start1":2764,"start2":2764,"length1":16,"length2":18}]],"length":3893,"saved":false}
+{"ts":1352495677088,"patch":[[{"diffs":[[0,"\" folder"],[1," and c"],[0,"</li>\r\n "]],"start1":2785,"start2":2785,"length1":16,"length2":22}]],"length":3899,"saved":false}
+{"ts":1352495679265,"patch":[[{"diffs":[[0,"er and c"],[1,"alled \""],[0,"</li>\r\n "]],"start1":2791,"start2":2791,"length1":16,"length2":23}]],"length":3906,"saved":false}
+{"ts":1352495680593,"patch":[[{"diffs":[[0,"called \""],[1,"tres"],[0,"</li>\r\n "]],"start1":2798,"start2":2798,"length1":16,"length2":20}]],"length":3910,"saved":false}
+{"ts":1352495682027,"patch":[[{"diffs":[[0,"led \"tre"],[-1,"s"],[1,"asu"],[0,"</li>\r\n "]],"start1":2801,"start2":2801,"length1":17,"length2":19}]],"length":3912,"saved":false}
+{"ts":1352495683109,"patch":[[{"diffs":[[0," \"treasu"],[1,"re"],[0,"</li>\r\n "]],"start1":2804,"start2":2804,"length1":16,"length2":18}]],"length":3914,"saved":false}
+{"ts":1352495684373,"patch":[[{"diffs":[[0,"treasure"],[1,"Hunt"],[0,"</li>\r\n "]],"start1":2806,"start2":2806,"length1":16,"length2":20}]],"length":3918,"saved":false}
+{"ts":1352495685075,"patch":[[{"diffs":[[0,"sureHunt"],[1,".c"],[0,"</li>\r\n "]],"start1":2810,"start2":2810,"length1":16,"length2":18}]],"length":3920,"saved":false}
+{"ts":1352495686233,"patch":[[{"diffs":[[0,"reHunt.c"],[1,"s"],[0,"</li>\r\n "]],"start1":2812,"start2":2812,"length1":16,"length2":17}]],"length":3921,"saved":false}
+{"ts":1352495686997,"patch":[[{"diffs":[[0,"eHunt.cs"],[1,"v\""],[0,"</li>\r\n "]],"start1":2813,"start2":2813,"length1":16,"length2":18}]],"length":3923,"saved":false}
+{"ts":1352495699996,"patch":[[{"diffs":[[0,"         </ul>\r\n"],[1,"            <li>In the dialog box, click \"Choose File\" to upload the CSV you just downloaded</li>\r\n"],[0,"          </ul>\r"]],"start1":2833,"start2":2833,"length1":32,"length2":131}]],"length":4022,"saved":false}
+{"ts":1352495709930,"patch":[[{"diffs":[[0,"<li>"],[-1,"In the dialog box, click \"Choose File\" to upload the CSV you just downloaded"],[1,"When your"],[0,"</li"]],"start1":2861,"start2":2861,"length1":84,"length2":17}]],"length":3955,"saved":false}
+{"ts":1352495711163,"patch":[[{"diffs":[[0,"hen your"],[1," "],[0,"</li>\r\n "]],"start1":2866,"start2":2866,"length1":16,"length2":17}]],"length":3956,"saved":false}
+{"ts":1352495711661,"patch":[[{"diffs":[[0,"en your "],[1,"CS"],[0,"</li>\r\n "]],"start1":2867,"start2":2867,"length1":16,"length2":18}]],"length":3958,"saved":false}
+{"ts":1352495714642,"patch":[[{"diffs":[[0," your CS"],[1,"V fi"],[0,"</li>\r\n "]],"start1":2869,"start2":2869,"length1":16,"length2":20}]],"length":3962,"saved":false}
+{"ts":1352495716189,"patch":[[{"diffs":[[0,"r CSV fi"],[1,"le is re"],[0,"</li>\r\n "]],"start1":2873,"start2":2873,"length1":16,"length2":24}]],"length":3970,"saved":false}
+{"ts":1352495717399,"patch":[[{"diffs":[[0,"le is re"],[1,"ady, "],[0,"</li>\r\n "]],"start1":2881,"start2":2881,"length1":16,"length2":21}]],"length":3975,"saved":false}
+{"ts":1352495720737,"patch":[[{"diffs":[[0," ready, "],[1,"click imp"],[0,"</li>\r\n "]],"start1":2886,"start2":2886,"length1":16,"length2":25}]],"length":3984,"saved":false}
+{"ts":1352495722194,"patch":[[{"diffs":[[0,"lick imp"],[1,"ort"],[0,"</li>\r\n "]],"start1":2895,"start2":2895,"length1":16,"length2":19}]],"length":3987,"saved":false}
+{"ts":1352495723590,"patch":[[{"diffs":[[0,"k import"],[1," "],[0,"</li>\r\n "]],"start1":2898,"start2":2898,"length1":16,"length2":17}]],"length":3988,"saved":false}
+{"ts":1352495726161,"patch":[[{"diffs":[[0,"ick "],[-1,"import "],[0,"</li"]],"start1":2896,"start2":2896,"length1":15,"length2":8}]],"length":3981,"saved":false}
+{"ts":1352495727106,"patch":[[{"diffs":[[0,", click "],[1,"\""],[0,"</li>\r\n "]],"start1":2892,"start2":2892,"length1":16,"length2":17}]],"length":3982,"saved":false}
+{"ts":1352495729464,"patch":[[{"diffs":[[0," click \""],[1,"Import La"],[0,"</li>\r\n "]],"start1":2893,"start2":2893,"length1":16,"length2":25}]],"length":3991,"saved":false}
+{"ts":1352495730674,"patch":[[{"diffs":[[0,"mport La"],[1,"yer\""],[0,"</li>\r\n "]],"start1":2902,"start2":2902,"length1":16,"length2":20}]],"length":3995,"saved":false}
+{"ts":1352495770720,"patch":[[{"diffs":[[0," bar, click on \""],[-1,"MAP"],[1,"Save"],[0,"\" to begin a new"]],"start1":3297,"start2":3297,"length1":35,"length2":36}]],"length":3996,"saved":false}
+{"ts":1352495776791,"patch":[[{"diffs":[[0,"ve\" "],[-1,"to begin a new project.<"],[1,"amd se"],[0,"/li>"]],"start1":3315,"start2":3315,"length1":32,"length2":14}]],"length":3978,"saved":false}
+{"ts":1352495778351,"patch":[[{"diffs":[[0,"\" amd se"],[1,"lect"],[0,"/li>\r\n  "]],"start1":3317,"start2":3317,"length1":16,"length2":20}]],"length":3982,"saved":false}
+{"ts":1352495779243,"patch":[[{"diffs":[[0,"d select"],[1," "],[0,"/li>\r\n  "]],"start1":3321,"start2":3321,"length1":16,"length2":17}]],"length":3983,"saved":false}
+{"ts":1352495779822,"patch":[[{"diffs":[[0," select "],[1,":"],[0,"/li>\r\n  "]],"start1":3322,"start2":3322,"length1":16,"length2":17}]],"length":3984,"saved":false}
+{"ts":1352495780300,"patch":[[{"diffs":[[0," select "],[-1,":"],[0,"/li>\r\n  "]],"start1":3322,"start2":3322,"length1":17,"length2":16}]],"length":3983,"saved":false}
+{"ts":1352495780958,"patch":[[{"diffs":[[0," select "],[1,"\"s"],[0,"/li>\r\n  "]],"start1":3322,"start2":3322,"length1":16,"length2":18}]],"length":3985,"saved":false}
+{"ts":1352495781648,"patch":[[{"diffs":[[0,"select \""],[-1,"s"],[0,"/li>\r\n  "]],"start1":3323,"start2":3323,"length1":17,"length2":16}]],"length":3984,"saved":false}
+{"ts":1352495783644,"patch":[[{"diffs":[[0," select "],[1,"\"Save"],[0,"\"/li>\r\n "]],"start1":3322,"start2":3322,"length1":16,"length2":21}]],"length":3989,"saved":false}
+{"ts":1352495785135,"patch":[[{"diffs":[[0,"t \"Save\""],[1,"<"],[0,"/li>\r\n  "]],"start1":3328,"start2":3328,"length1":16,"length2":17}]],"length":3990,"saved":false}
+{"ts":1352495791779,"patch":[[{"diffs":[[0,"ct \"Save\"</li>\r\n"],[1,"            <li>In the top menu bar, click on \"Save\" amd select \"Save\"</li>\r\n"],[0,"          </ul>\r"]],"start1":3327,"start2":3327,"length1":32,"length2":109}]],"length":4067,"saved":false}
+{"ts":1352495806233,"patch":[[{"diffs":[[0,"<li>"],[-1,"I"],[1,"Whe"],[0,"n the "],[-1,"top menu bar, click on \"Save\" amd select \"Save\""],[0,"</li"]],"start1":3355,"start2":3355,"length1":62,"length2":17}]],"length":4022,"saved":false}
+{"ts":1352495807611,"patch":[[{"diffs":[[0,"hen the "],[1,"dial"],[0,"</li>\r\n "]],"start1":3360,"start2":3360,"length1":16,"length2":20}]],"length":4026,"saved":false}
+{"ts":1352495810596,"patch":[[{"diffs":[[0,"the dial"],[1,"og opens, "],[0,"</li>\r\n "]],"start1":3364,"start2":3364,"length1":16,"length2":26}]],"length":4036,"saved":false}
+{"ts":1352495812126,"patch":[[{"diffs":[[0," opens, "],[1,"fill"],[0,"</li>\r\n "]],"start1":3374,"start2":3374,"length1":16,"length2":20}]],"length":4040,"saved":false}
+{"ts":1352495814157,"patch":[[{"diffs":[[0,"ns, fill"],[1," in "],[0,"</li>\r\n "]],"start1":3378,"start2":3378,"length1":16,"length2":20}]],"length":4044,"saved":false}
+{"ts":1352495815974,"patch":[[{"diffs":[[0,"fill in "],[1,"ever"],[0,"</li>\r\n "]],"start1":3382,"start2":3382,"length1":16,"length2":20}]],"length":4048,"saved":false}
+{"ts":1352495818184,"patch":[[{"diffs":[[0," in ever"],[1,"y"],[0,"</li>\r\n "]],"start1":3386,"start2":3386,"length1":16,"length2":17}]],"length":4049,"saved":false}
+{"ts":1352495822859,"patch":[[{"diffs":[[0,"in every"],[1," fie"],[0,"</li>\r\n "]],"start1":3387,"start2":3387,"length1":16,"length2":20}]],"length":4053,"saved":false}
+{"ts":1352495823872,"patch":[[{"diffs":[[0,"very fie"],[1,"ld"],[0,"</li>\r\n "]],"start1":3391,"start2":3391,"length1":16,"length2":18}]],"length":4055,"saved":false}
+{"ts":1352495826119,"patch":[[{"diffs":[[0,"ry field"],[1,"."],[0,"</li>\r\n "]],"start1":3393,"start2":3393,"length1":16,"length2":17}]],"length":4056,"saved":false}
+{"ts":1352495851328,"patch":[[{"diffs":[[0,"ry field.</li>\r\n"],[1,"            \r\n"],[0,"          </ul>\r"]],"start1":3393,"start2":3393,"length1":32,"length2":46}]],"length":4070,"saved":false}
+{"ts":1352495852151,"patch":[[{"diffs":[[0,"i>\r\n            "],[1,"<ul>\r\n              <li class=\"insetInstructions\">The CSV file will most likely be in your computer's \"Downloads\" folder and called \"treasureHunt.csv\"</li>\r\n            </ul>"],[0,"\r\n          </ul"]],"start1":3405,"start2":3405,"length1":32,"length2":206}]],"length":4244,"saved":false}
+{"ts":1352495858806,"patch":[[{"diffs":[[0,"s\">T"],[-1,"he CSV file will most likely be in your computer's \"Downloads\" folder and called \"treasureHunt.csv\""],[0,"</li"]],"start1":3468,"start2":3468,"length1":107,"length2":8}]],"length":4145,"saved":false}
+{"ts":1352495860265,"patch":[[{"diffs":[[0,"tions\">T"],[1,"itle"],[0,"</li>\r\n "]],"start1":3464,"start2":3464,"length1":16,"length2":20}]],"length":4149,"saved":false}
+{"ts":1352495861537,"patch":[[{"diffs":[[0,"s\">Title"],[1,":"],[0,"</li>\r\n "]],"start1":3468,"start2":3468,"length1":16,"length2":17}]],"length":4150,"saved":false}
+{"ts":1352495863254,"patch":[[{"diffs":[[0,"\">Title:"],[1," This"],[0,"</li>\r\n "]],"start1":3469,"start2":3469,"length1":16,"length2":21}]],"length":4155,"saved":false}
+{"ts":1352495864101,"patch":[[{"diffs":[[0,"le: This"],[1," w"],[0,"</li>\r\n "]],"start1":3474,"start2":3474,"length1":16,"length2":18}]],"length":4157,"saved":false}
+{"ts":1352495866107,"patch":[[{"diffs":[[0,": This w"],[1,"ill b"],[0,"</li>\r\n "]],"start1":3476,"start2":3476,"length1":16,"length2":21}]],"length":4162,"saved":false}
+{"ts":1352495866670,"patch":[[{"diffs":[[0,"s will b"],[1,"e"],[0,"</li>\r\n "]],"start1":3481,"start2":3481,"length1":16,"length2":17}]],"length":4163,"saved":false}
+{"ts":1352495867258,"patch":[[{"diffs":[[0," will be"],[1,"co"],[0,"</li>\r\n "]],"start1":3482,"start2":3482,"length1":16,"length2":18}]],"length":4165,"saved":false}
+{"ts":1352495869326,"patch":[[{"diffs":[[0,"ill beco"],[1,"me the "],[0,"</li>\r\n "]],"start1":3484,"start2":3484,"length1":16,"length2":23}]],"length":4172,"saved":false}
+{"ts":1352495873517,"patch":[[{"diffs":[[0,"ome the "],[1,"main title"],[0,"</li>\r\n "]],"start1":3491,"start2":3491,"length1":16,"length2":26}]],"length":4182,"saved":false}
+{"ts":1352495875541,"patch":[[{"diffs":[[0,"in title"],[1," in your"],[0,"</li>\r\n "]],"start1":3501,"start2":3501,"length1":16,"length2":24}]],"length":4190,"saved":false}
+{"ts":1352495876461,"patch":[[{"diffs":[[0," in your"],[1," "],[0,"</li>\r\n "]],"start1":3509,"start2":3509,"length1":16,"length2":17}]],"length":4191,"saved":false}
+{"ts":1352495881768,"patch":[[{"diffs":[[0,"in your "],[1,"application"],[0,"</li>\r\n "]],"start1":3510,"start2":3510,"length1":16,"length2":27}]],"length":4202,"saved":false}
+{"ts":1352495883035,"patch":[[{"diffs":[[0,"lication"],[1,"."],[0,"</li>\r\n "]],"start1":3521,"start2":3521,"length1":16,"length2":17}]],"length":4203,"saved":false}
+{"ts":1352495892284,"patch":[[{"diffs":[[0,"lication.</li>\r\n"],[1,"              <li class=\"insetInstructions\">Title: This will become the main title in your application.</li>\r\n"],[0,"            </ul"]],"start1":3521,"start2":3521,"length1":32,"length2":142}]],"length":4313,"saved":false}
+{"ts":1352495896767,"patch":[[{"diffs":[[0,"tInstructions\">T"],[-1,"itle"],[1,"ags"],[0,": This will beco"]],"start1":3566,"start2":3566,"length1":36,"length2":35}]],"length":4312,"saved":false}
+{"ts":1352495903231,"patch":[[{"diffs":[[0,"gs: "],[-1,"This will become the main title in your application."],[1,"Use"],[0,"</li"]],"start1":3583,"start2":3583,"length1":60,"length2":11}]],"length":4263,"saved":false}
+{"ts":1352495907195,"patch":[[{"diffs":[[0,"ags: Use"],[1," good ta"],[0,"</li>\r\n "]],"start1":3582,"start2":3582,"length1":16,"length2":24}]],"length":4271,"saved":false}
+{"ts":1352495909126,"patch":[[{"diffs":[[0," good ta"],[1,"gs to "],[0,"</li>\r\n "]],"start1":3590,"start2":3590,"length1":16,"length2":22}]],"length":4277,"saved":false}
+{"ts":1352495910237,"patch":[[{"diffs":[[0,"tags to "],[1,"hel"],[0,"</li>\r\n "]],"start1":3596,"start2":3596,"length1":16,"length2":19}]],"length":4280,"saved":false}
+{"ts":1352495911968,"patch":[[{"diffs":[[0,"s to hel"],[1,"p"],[0,"</li>\r\n "]],"start1":3599,"start2":3599,"length1":16,"length2":17}]],"length":4281,"saved":false}
+{"ts":1352495938488,"patch":[[{"diffs":[[0," to help"],[1," you and others find this map"],[0,"</li>\r\n "]],"start1":3600,"start2":3600,"length1":16,"length2":45}]],"length":4310,"saved":false}
+{"ts":1352495939061,"patch":[[{"diffs":[[0,"this map"],[1," "],[0,"</li>\r\n "]],"start1":3629,"start2":3629,"length1":16,"length2":17}]],"length":4311,"saved":false}
+{"ts":1352495939805,"patch":[[{"diffs":[[0,"his map "],[1,"la"],[0,"</li>\r\n "]],"start1":3630,"start2":3630,"length1":16,"length2":18}]],"length":4313,"saved":false}
+{"ts":1352495940888,"patch":[[{"diffs":[[0,"s map la"],[1,"ter"],[0,"</li>\r\n "]],"start1":3632,"start2":3632,"length1":16,"length2":19}]],"length":4316,"saved":false}
+{"ts":1352495945470,"patch":[[{"diffs":[[0,"ap later"],[1,"."],[0,"</li>\r\n "]],"start1":3635,"start2":3635,"length1":16,"length2":17}]],"length":4317,"saved":false}
+{"ts":1352495953883,"patch":[[{"diffs":[[0,"ap later.</li>\r\n"],[1,"              li class=\"insetInstructions\">Tags: Use good tags to help you and others find this map later.</li>\r\n"],[0,"            </ul"]],"start1":3635,"start2":3635,"length1":32,"length2":145}]],"length":4430,"saved":false}
+{"ts":1352495956963,"patch":[[{"diffs":[[0,"        "],[1,"<"],[0,"li class"]],"start1":3657,"start2":3657,"length1":16,"length2":17}]],"length":4431,"saved":false}
+{"ts":1352495960717,"patch":[[{"diffs":[[0,"etInstructions\">"],[-1,"Tags"],[1,"Summart"],[0,": Use good tags "]],"start1":3679,"start2":3679,"length1":36,"length2":39}]],"length":4434,"saved":false}
+{"ts":1352495961950,"patch":[[{"diffs":[[0,"\">Summar"],[-1,"t"],[1,"y"],[0,": Use go"]],"start1":3693,"start2":3693,"length1":17,"length2":17}]],"length":4434,"saved":false}
+{"ts":1352495975294,"patch":[[{"diffs":[[0,"ary:"],[-1," Use good tags to help you and others find this map later"],[1,"This will become the main title in your application"],[0,".</l"]],"start1":3699,"start2":3699,"length1":65,"length2":59}]],"length":4428,"saved":false}
+{"ts":1352495976779,"patch":[[{"diffs":[[0,"Summary:"],[1," "],[0,"This wil"]],"start1":3695,"start2":3695,"length1":16,"length2":17}]],"length":4429,"saved":false}
+{"ts":1352495980311,"patch":[[{"diffs":[[0,"will become the "],[-1,"main "],[0,"title in your ap"]],"start1":3709,"start2":3709,"length1":37,"length2":32}]],"length":4424,"saved":false}
+{"ts":1352495983219,"patch":[[{"diffs":[[0,"ome the "],[1,"sub"],[0,"title in"]],"start1":3717,"start2":3717,"length1":16,"length2":19}]],"length":4427,"saved":false}
+{"ts":1352496599555,"patch":[[{"diffs":[[0,"tep "],[-1,"6"],[1,"7"],[0,": La"]],"start1":4030,"start2":4030,"length1":9,"length2":9}]],"length":4427,"saved":false}
+{"ts":1352496609769,"patch":[[{"diffs":[[0,"\r\n        \r\n"],[1,"        <div class=\"stepHeader\">Step 7: Launch Application</div>\r\n        <div class=\"stepContent\">\r\n          <ul class=\"instructions\">\r\n            <li>In the top menu bar, click on \"MAP\" to begin a new project.</li>\r\n          </ul>\r\n          <img class=\"screenshot\" src=\"css/images/sreenshots/url.png\" alt=\"home\">\r\n        </div>\r\n        \r\n"],[0,"      </div>"]],"start1":4331,"start2":4331,"length1":24,"length2":370}]],"length":4773,"saved":false}
+{"ts":1352496612086,"patch":[[{"diffs":[[0,"tepHeader\">Step "],[-1,"7"],[1,"6"],[0,": Launch Applica"]],"start1":4018,"start2":4018,"length1":33,"length2":33}]],"length":4773,"saved":false}
+{"ts":1352496621969,"patch":[[{"diffs":[[0,"Step 6: "],[-1,"Launch Application"],[1,"MAke"],[0,"</div>\r\n"]],"start1":4029,"start2":4029,"length1":34,"length2":20}]],"length":4759,"saved":false}
+{"ts":1352496624484,"patch":[[{"diffs":[[0,"6: M"],[-1,"A"],[1,"a"],[0,"ke"],[1," yo"],[0,"</di"]],"start1":4034,"start2":4034,"length1":11,"length2":14}]],"length":4762,"saved":false}
+{"ts":1352496625676,"patch":[[{"diffs":[[0,"6: Make "],[-1,"yo"],[1,"Y"],[0,"</div>\r\n"]],"start1":4034,"start2":4034,"length1":18,"length2":17}]],"length":4761,"saved":false}
+{"ts":1352496627118,"patch":[[{"diffs":[[0,": Make Y"],[1,"our "],[0,"</div>\r\n"]],"start1":4035,"start2":4035,"length1":16,"length2":20}]],"length":4765,"saved":false}
+{"ts":1352496628115,"patch":[[{"diffs":[[0,"ke Your "],[1,"MAp"],[0,"</div>\r\n"]],"start1":4039,"start2":4039,"length1":16,"length2":19}]],"length":4768,"saved":false}
+{"ts":1352496629819,"patch":[[{"diffs":[[0,"e Your M"],[-1,"Ap"],[1,"ap "],[0,"</div>\r\n"]],"start1":4040,"start2":4040,"length1":18,"length2":19}]],"length":4769,"saved":false}
+{"ts":1352496631311,"patch":[[{"diffs":[[0,"our Map "],[1,"Publ"],[0,"</div>\r\n"]],"start1":4043,"start2":4043,"length1":16,"length2":20}]],"length":4773,"saved":false}
+{"ts":1352496632479,"patch":[[{"diffs":[[0,"Map Publ"],[1,"ic"],[0,"</div>\r\n"]],"start1":4047,"start2":4047,"length1":16,"length2":18}]],"length":4775,"saved":false}
+{"ts":1352496649507,"patch":[[{"diffs":[[0,"p Public"],[1,"ally"],[0,"</div>\r\n"]],"start1":4049,"start2":4049,"length1":16,"length2":20}]],"length":4779,"saved":false}
+{"ts":1352496668214,"patch":[[{"diffs":[[0,"Map "],[-1,"P"],[1,"p"],[0,"ublic"],[-1,"al"],[0,"ly"],[1," accessible"],[0,"</di"]],"start1":4047,"start2":4047,"length1":18,"length2":27}]],"length":4788,"saved":false}
+{"ts":1352496670852,"patch":[[{"diffs":[[0,"our Map "],[-1,"p"],[1,"P"],[0,"ublicly "]],"start1":4043,"start2":4043,"length1":17,"length2":17}]],"length":4788,"saved":false}
+{"ts":1352496673601,"patch":[[{"diffs":[[0,"ublicly "],[-1,"a"],[1,"A"],[0,"ccessibl"]],"start1":4052,"start2":4052,"length1":17,"length2":17}]],"length":4788,"saved":false}
