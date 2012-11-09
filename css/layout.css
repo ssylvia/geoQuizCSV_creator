@@ -75,6 +75,19 @@ a.noButton{
     margin:25px;
 }
 
+#webmap{
+    width:400px;
+    background:#fafafa;
+    font-family:Georgia, serif;
+    font-size:16px;
+    color:#1c99c2;
+    padding:3px;
+    border:3px solid #dadada;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    outline:none;
+}
+
 .questionHeader{
     color:#1c99c2;
     font-size:28px;
