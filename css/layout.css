@@ -1,6 +1,5 @@
-html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;}
+html,body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;}
 h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th {font-size:1em; font-weight:normal; font-style:normal;}
-ul,ol {list-style:none;}
 fieldset,img,hr {border:none;}
 caption,th {text-align:left;}
 table {border-collapse:collapse; border-spacing:0;}
@@ -38,6 +37,29 @@ a{
     -moz-box-shadow: 0px 0px 10px 2px #666;
     -webkit-box-shadow: 0px 0px 10px 2px #666;
     box-shadow: 0px 0px 10px 2px #666;
+}
+
+.error{
+    display:none;
+    font-size:20px;
+    font-weight:bold;
+    color:#C43D40;
+}
+
+#mainError{
+    display:none;
+    margin:25px;
+    background:#FFCDCC;
+    color:#C43D40;
+    padding:15px;
+    border:2px solid #C43D40;
+    font-size:18px;
+    font-weight:normal;
+}
+
+#mainErrorMesssage{
+    font-size:20px;
+    font-weight:bold;
 }
 
 #questionsWrapper{    

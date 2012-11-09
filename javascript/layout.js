@@ -32,8 +32,8 @@ var createNewQuestion = function(){
     if (_questionCount < _maxQuestions){
       _current = _questionCount;
       $(".questionContent").slideUp();
-      $("#questionsWrapper").append("<div class='questionHeader open'>"+(_questionCount+1)+". <input type='text' class='question'  placeholder='Type a question here...'></div>");
-      $("#questionsWrapper").append("<div class='questionContent'><form class='questionForm'>Location's Name:<br><textarea class='name textInput' placeholder='Type a name for your location here...'></textarea><br>Location's Description:<br><textarea class='description textInput' placeholder='Type a description for your location here...'></textarea><br>Hint:<br><textarea class='hint textInput' placeholder='Type a hint here...'></textarea><br>Image URL:<br><textarea class='imgURL textInput' placeholder='Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png) '></textarea><br>Add question to map:<br><div id='mapWrapper"+_questionCount+"' class='mapWrapper'><table class='locationTable'><tr><td colspan='2' style='vertical-align:bottom'><a href='#' class='addPoint modern embossed-link' onclick='addPoint("+_questionCount+")'>Find Location on Map</a><br><br><strong>OR</strong><br><br></td></tr><tr><td style='vertical-align:top; text-align:right;'>Latitude: <input type='text' class='latitude latLongText' onchange='updatePoint()'  placeholder='e.g. 34.056'></td><td style='vertical-align:top; text-align:left;'>Longitude: <input type='text' class='longitude latLongText' onchange='updatePoint()'  placeholder='e.g. -117.197'></td></tr></table><div id='map"+_questionCount+"' class='map'></div><div class='mapBlind'></div></div></form></div>");
+      $("#questionsWrapper").append("<div class='questionHeader open'><span class='error questionError'>*</span>"+(_questionCount+1)+". <input type='text' class='question'  placeholder='Type a question here...'></div>");
+      $("#questionsWrapper").append("<div class='questionContent'><form class='questionForm'><span class='error nameError'>*</span>Location's Name:<br><textarea class='name textInput' placeholder='Type a name for your location here...'></textarea><br><span class='error descriptionError'>*</span>Location's Description:<br><textarea class='description textInput' placeholder='Type a description for your location here...'></textarea><br><span class='error hintError'>*</span>Hint:<br><textarea class='hint textInput' placeholder='Type a hint here...'></textarea><br><span class='error imgError'>*</span>Image URL:<br><textarea class='imgURL textInput' placeholder='Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png) '></textarea><br><span class='error mapError'>*</span>Add question to map:<br><div id='mapWrapper"+_questionCount+"' class='mapWrapper'><table class='locationTable'><tr><td colspan='2' style='vertical-align:bottom'><a href='#' class='addPoint modern embossed-link' onclick='addPoint("+_questionCount+")'>Find Location on Map</a><br><br><strong>OR</strong><br><br></td></tr><tr><td style='vertical-align:top; text-align:right;'>Latitude: <input type='text' class='latitude latLongText' onchange='updatePoint()'  placeholder='e.g. 34.056'></td><td style='vertical-align:top; text-align:left;'>Longitude: <input type='text' class='longitude latLongText' onchange='updatePoint()'  placeholder='e.g. -117.197'></td></tr></table><div id='map"+_questionCount+"' class='map'></div><div class='mapBlind'></div></div></form></div>");
       
       $(".mapWrapper").width($("#questionsWrapper").width()-2);
       $(".mapBlind").fadeTo(0,"0.8");
@@ -120,23 +120,86 @@ var updatePoint = function(){
     }
 };
 
-var exportCSV = function(event){
-    var csv = "\"Order\",\"Question\",\"Title\",\"Description\",\"Hint\",\"Image_URL\",\"Long\",\"Lat\"\n";
+var errorCheck = function(){
+    
+    $(".error").hide();
+    $("#errorMessages").html("");
+    
+    var noError = true;
+    
+    var errorMessages = [];
+    
     $(".questionContent").each(function(i){
-        var index = i.toString();
         var question = $(this).prev().children(".question").val();
         var title = $(this).children("form").children(".name").val();
         var description = $(this).children("form").children(".description").val();
         var hint = $(this).children("form").children(".hint").val();
         var img_URL = $(this).children("form").children(".imgURL").val();
-        var geoPoint = esri.geometry.webMercatorToGeographic(_maps[i].questionLocation.graphics[0].geometry)
-        var x = geoPoint.x.toString();
-        var y = geoPoint.y.toString();
-        var csvAdd = "\""+index+"\",\""+question+"\",\""+title+"\",\""+description+"\",\""+hint+"\",\""+img_URL+"\",\""+x+"\",\""+y+"\"\n";  
-        csv = csv+csvAdd;
+        var geoPoint = _maps[i].questionLocation.graphics[0];
+        
+        if (question === ""){
+            noError = false;
+            errorMessages.push("Question "+(i+1)+": Enter a question.");
+            $(".questionError").eq(i).show();
+        }
+        if (title === ""){
+            noError = false;
+            errorMessages.push("Question "+(i+1)+": Enter a name for the location.");
+            $(".nameError").eq(i).show();
+        }
+        if (description === ""){
+            noError = false;
+            errorMessages.push("Question "+(i+1)+": Enter a description for the location.");
+            $(".descriptionError").eq(i).show();
+        }
+        if (hint === ""){
+            noError = false;
+            errorMessages.push("Question "+(i+1)+": Enter a hint for the question.");
+            $(".hintError").eq(i).show();
+        }
+        if (img_URL === ""){
+            noError = false;
+            errorMessages.push("Question "+(i+1)+": Enter an image URL for the picture to be displayed with location.");
+            $(".imgError").eq(i).show();
+        }
+        if (geoPoint === undefined){
+            noError = false;
+            errorMessages.push("Question "+(i+1)+": Add the location to the map.");
+            $(".mapError").eq(i).show();
+        }
     });
     
-    saveFile(event,csv);
+    if(!noError){
+        dojo.forEach(errorMessages,function(msg) {
+            $("#errorMessages").append("<li>"+msg+"</li>");
+        });
+        $("#mainError").slideDown("fast");
+        resetLayout();
+    }
+    
+    
+    return noError;
+};
+
+var exportCSV = function(event){
+    if (errorCheck()){
+        var csv = "\"Order\",\"Question\",\"Title\",\"Description\",\"Hint\",\"Image_URL\",\"Long\",\"Lat\"\n";
+        $(".questionContent").each(function(i){
+            var index = i.toString();
+            var question = $(this).prev().children(".question").val();
+            var title = $(this).children("form").children(".name").val();
+            var description = $(this).children("form").children(".description").val();
+            var hint = $(this).children("form").children(".hint").val();
+            var img_URL = $(this).children("form").children(".imgURL").val();
+            var geoPoint = esri.geometry.webMercatorToGeographic(_maps[i].questionLocation.graphics[0].geometry);
+            var x = geoPoint.x.toString();
+            var y = geoPoint.y.toString();
+            var csvAdd = "\""+index+"\",\""+question+"\",\""+title+"\",\""+description+"\",\""+hint+"\",\""+img_URL+"\",\""+x+"\",\""+y+"\"\n";  
+            csv = csv+csvAdd;
+        });
+        
+        saveFile(event,csv);
+    }
 };
 
 var saveFile = function(event,csv){
