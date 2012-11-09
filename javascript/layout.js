@@ -21,7 +21,11 @@ $(window).resize(function(){
 var resetLayout = function(){
     $("#content").css("left",($(document).width() - $("#content").width())/2);
     $("#bannerArt").css("margin-left",($("#content").width()-406)/2);
-    $(".mapWrapper").width($("#questionsWrapper").width()-2);
+    $(".mapWrapper").width($("#questionsWrapper").width()-6);
+    $(".textInput").width($("#questionsWrapper").width()-12);
+    $(".question").each(function(i){
+        $(this).width($("#questionsWrapper").width()-$(".questionCount").eq(i).width()-$(".questionError").eq(i).width()-3);
+    });
     dojo.forEach(_maps,function(map){
         map.resize();
         map.reposition();
@@ -32,7 +36,7 @@ var createNewQuestion = function(){
     if (_questionCount < _maxQuestions){
       _current = _questionCount;
       $(".questionContent").slideUp();
-      $("#questionsWrapper").append("<div class='questionHeader open'><span class='error questionError'>*</span>"+(_questionCount+1)+". <input type='text' class='question'  placeholder='Type a question here...'></div>");
+      $("#questionsWrapper").append("<div class='questionHeader open'><span class='error questionError'>*</span><span class='questionCount'>"+(_questionCount+1)+". </span><input type='text' class='question'  placeholder='Type a question here...'></div>");
       $("#questionsWrapper").append("<div class='questionContent'><form class='questionForm'><span class='error nameError'>*</span>Location's Name:<br><textarea class='name textInput' placeholder='Type a name for your location here...'></textarea><br><span class='error descriptionError'>*</span>Location's Description:<br><textarea class='description textInput' placeholder='Type a description for your location here...'></textarea><br><span class='error hintError'>*</span>Hint:<br><textarea class='hint textInput' placeholder='Type a hint here...'></textarea><br><span class='error imgError'>*</span>Image URL:<br><textarea class='imgURL textInput' placeholder='Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png) '></textarea><br><span class='error mapError'>*</span>Add question to map:<br><div id='mapWrapper"+_questionCount+"' class='mapWrapper'><table class='locationTable'><tr><td colspan='2' style='vertical-align:bottom'><a href='#' class='addPoint modern embossed-link' onclick='addPoint("+_questionCount+")'>Find Location on Map</a><br><br><strong>OR</strong><br><br></td></tr><tr><td style='vertical-align:top; text-align:right;'>Latitude: <input type='text' class='latitude latLongText' onchange='updatePoint()'  placeholder='e.g. 34.056'></td><td style='vertical-align:top; text-align:left;'>Longitude: <input type='text' class='longitude latLongText' onchange='updatePoint()'  placeholder='e.g. -117.197'></td></tr></table><div id='map"+_questionCount+"' class='map'></div><div class='mapBlind'></div></div></form></div>");
       
       $(".mapWrapper").width($("#questionsWrapper").width()-2);
@@ -95,6 +99,22 @@ var createNewQuestion = function(){
             setTimeout(function() {
                 resetLayout();
             }, 200);
+        }
+    });
+    
+    $(".question, .textInput").blur(function(){
+        if($(this).val() !== ""){
+            $(this).css("border-color","#fafafa");
+        }
+    });
+    
+    $(".question, .textInput").mouseover(function(){
+        $(this).css("border-color","#dadada");
+    });
+    
+    $(".question, .textInput").mouseout(function(){
+        if(!$(this).is(":focus") && $(this).val() !== ""){
+            $(this).css("border-color","#fafafa");
         }
     });
     

@@ -84,9 +84,9 @@ a{
     background:#fafafa;
     font-size:24px;
     font-family:Georgia, serif;
-    padding:0;
+    padding:3px;
     margin:0;
-    border:none;
+    border:3px solid #dadada;
     width:85%;
     outline:none;
     text-overflow: ellipsis;
@@ -94,15 +94,16 @@ a{
 }
 
 .textInput{
-    width:100%;    
+    width:100%;
+    height:20px;
     background:#fafafa;
     font-family:Georgia, serif;
     font-size:16px;
     color:#1c99c2;
-    padding:0;
+    padding:3px;
     resize:none;
     margin-bottom:10px;
-    border:none;
+    border:3px solid #dadada;
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     outline:none;
@@ -113,7 +114,7 @@ a{
     width:100%;
     height:500px;
     margin-top:7px;
-    border:1px solid #65350b;
+    border:3px solid #dadada;
     overflow:hidden;
 }
 
@@ -152,13 +153,11 @@ a{
     font-weight:bold;
     text-align:center;
     color:#1c99c2;
-    padding:5px;
-    border:none;
+    padding:3px;
+    border:3px solid #dadada;
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
-    outline:none;-moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
+    outline:none;
 }
 
 .modern {
