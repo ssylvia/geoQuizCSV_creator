@@ -236,4 +236,6 @@ var saveFile = function(event,csv){
 		});
 		
 		event.preventDefault();
+        
+        window.location = "instructions.html";
 };
