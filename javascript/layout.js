@@ -131,7 +131,7 @@ var exportCSV = function(event){
         var img_URL = $(this).children("form").children(".imgURL").val();
         var geoPoint = esri.geometry.webMercatorToGeographic(_maps[i].questionLocation.graphics[0].geometry)
         var x = geoPoint.x.toString();
-        var y = _geoPoint.y.toString();
+        var y = geoPoint.y.toString();
         var csvAdd = "\""+index+"\",\""+question+"\",\""+title+"\",\""+description+"\",\""+hint+"\",\""+img_URL+"\",\""+x+"\",\""+y+"\"\n";  
         csv = csv+csvAdd;
     });
@@ -141,7 +141,7 @@ var exportCSV = function(event){
 
 var saveFile = function(event,csv){
     $.generateFile({
-    		filename	: 'geoQuiz.csv',
+    		filename	: 'treasureHunt.csv',
 			content		: csv,
 			script		: 'export.php'
 		});
