@@ -239,3 +239,4 @@
 {"ts":1352475204164,"patch":[[{"diffs":[[0,"=\"errorM"],[1,"essafe"],[0,">\r\n     "]],"start1":1431,"start2":1431,"length1":16,"length2":22}]],"length":2111,"saved":false}
 {"ts":1352475206431,"patch":[[{"diffs":[[0,"essa"],[-1,"fe"],[1,"ges"],[0,">\r\n "]],"start1":1439,"start2":1439,"length1":10,"length2":11}]],"length":2112,"saved":false}
 {"ts":1352475207454,"patch":[[{"diffs":[[0,"Messages"],[1,"\""],[0,">\r\n     "]],"start1":1438,"start2":1438,"length1":16,"length2":17}]],"length":2113,"saved":false}
+{"ts":1352481527968,"patch":[[{"diffs":[[0,"ript/jquery."],[-1,"autosize-"],[1,"placeholder."],[0,"min.js\"></sc"]],"start1":1004,"start2":1004,"length1":33,"length2":36}]],"length":2202,"saved":false}

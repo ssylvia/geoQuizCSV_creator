@@ -37,7 +37,7 @@ var createNewQuestion = function(){
       _current = _questionCount;
       $(".questionContent").slideUp();
       $("#questionsWrapper").append("<div class='questionHeader open'><span class='error questionError'>*</span><span class='questionCount'>"+(_questionCount+1)+". </span><input type='text' class='question'  placeholder='Type a question here...'></div>");
-      $("#questionsWrapper").append("<div class='questionContent'><form class='questionForm'><span class='error nameError'>*</span>Location's Name:<br><textarea class='name textInput' placeholder='Type a name for your location here...'></textarea><br><span class='error descriptionError'>*</span>Location's Description:<br><textarea class='description textInput' placeholder='Type a description for your location here...'></textarea><br><span class='error hintError'>*</span>Hint:<br><textarea class='hint textInput' placeholder='Type a hint here...'></textarea><br><span class='error imgError'>*</span>Image URL:<br><textarea class='imgURL textInput' placeholder='Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png) '></textarea><br><span class='error mapError'>*</span>Add question to map:<br><div id='mapWrapper"+_questionCount+"' class='mapWrapper'><table class='locationTable'><tr><td colspan='2' style='vertical-align:bottom'><a href='#' class='addPoint modern embossed-link' onclick='addPoint("+_questionCount+")'>Find Location on Map</a><br><br><strong>OR</strong><br><br></td></tr><tr><td style='vertical-align:top; text-align:right;'>Latitude: <input type='text' class='latitude latLongText' onchange='updatePoint()'  placeholder='e.g. 34.056'></td><td style='vertical-align:top; text-align:left;'>Longitude: <input type='text' class='longitude latLongText' onchange='updatePoint()'  placeholder='e.g. -117.197'></td></tr></table><div id='map"+_questionCount+"' class='map'></div><div class='mapBlind'></div></div></form></div>");
+      $("#questionsWrapper").append("<div class='questionContent'><form class='questionForm'><span class='error nameError'>*</span>Location's Name:<br><textarea class='name textInput' placeholder='Type a name for your location here...'></textarea><br><span class='error descriptionError'>*</span>Location's Description:<br><textarea class='description textInput' placeholder='Type a description for your location here...'></textarea><br><span class='error hintError'>*</span>Hint:<br><textarea class='hint textInput' placeholder='Type a hint here...'></textarea><br><span class='error imgError'>*</span>Image URL:<br><textarea class='imgURL textInput' placeholder='Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)'></textarea><br><span class='error mapError'>*</span>Add question to map:<br><div id='mapWrapper"+_questionCount+"' class='mapWrapper'><table class='locationTable'><tr><td colspan='2' style='vertical-align:bottom'><a href='#' class='addPoint modern embossed-link' onclick='addPoint("+_questionCount+")'>Find Location on Map</a><br><br><strong>OR</strong><br><br></td></tr><tr><td style='vertical-align:top; text-align:right;'>Latitude: <input type='text' class='latitude latLongText' onchange='updatePoint()'  placeholder='e.g. 34.056'></td><td style='vertical-align:top; text-align:left;'>Longitude: <input type='text' class='longitude latLongText' onchange='updatePoint()'  placeholder='e.g. -117.197'></td></tr></table><div id='map"+_questionCount+"' class='map'></div><div class='mapBlind'></div></div></form></div>");
       
       $(".mapWrapper").width($("#questionsWrapper").width()-2);
       $(".mapBlind").fadeTo(0,"0.8");
@@ -103,8 +103,10 @@ var createNewQuestion = function(){
     });
     
     $(".question, .textInput").blur(function(){
-        if($(this).val() !== ""){
-            $(this).css("border-color","#fafafa");
+        if ($(this).val() !== "Type a question here..." && $(this).val() !== "Type a name for your location here..." && $(this).val() !== "Type a description for your location here..." && $(this).val() !== "Type a hint here..." && $(this).val() !== "Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)"){
+            if($(this).val() !== ""){
+                $(this).css("border-color","#fafafa");
+            }
         }
     });
     
@@ -113,10 +115,14 @@ var createNewQuestion = function(){
     });
     
     $(".question, .textInput").mouseout(function(){
-        if(!$(this).is(":focus") && $(this).val() !== ""){
-            $(this).css("border-color","#fafafa");
+        if ($(this).val() !== "Type a question here..." && $(this).val() !== "Type a name for your location here..." && $(this).val() !== "Type a description for your location here..." && $(this).val() !== "Type a hint here..." && $(this).val() !== "Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)"){
+            if(!$(this).is(":focus") && $(this).val() !== ""){
+                $(this).css("border-color","#fafafa");
+            }
         }
     });
+    
+    $('input[placeholder], textarea[placeholder]').placeholder();
     
     setTimeout(function() {
         resetLayout();
