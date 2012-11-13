@@ -1,10 +1,14 @@
 dojo.require("esri.map");
+dojo.require("esri.layers.FeatureLayer");
 
 var _questionCount;
 var _current = 0;
 var _maps = [];
 var _maxQuestions = 10;
 var _appId = undefined;
+var _title = undefined;
+var _subtitle = undefined;
+var _editableFeatures;
 
 $(document).ready(function(){
     _questionCount = $(".questionHeader").length;
@@ -59,11 +63,17 @@ var queryQuiz = function () {
 var editResults = function(results){
     if (results.features.length > 0){
 
+        _editableFeatures = results;
+
         dojo.forEach(_maps,function(map){
             map.destroy();
         });
 
         _appId = results.features[0].attributes.App_ID;
+        _title = results.features[0].attributes.App_Title;
+        $("#appTitle").val(results.features[0].attributes.App_Title);
+        _subtitle = results.features[0].attributes.App_Subtitle;
+        $("#appSubtitle").val(results.features[0].attributes.App_Subtitle);
 
         _questionCount = 0;
         _current = 0;
@@ -103,7 +113,7 @@ var createNewQuestion = function(i){
     _questionCount = i || _questionCount;
     if (_questionCount < _maxQuestions){
       _current = _questionCount;
-      $(".questionContent").slideUp();
+      //$(".questionContent").slideUp();
       $("#questionsWrapper").append("<div class='questionHeader open'><span class='error questionError'>*</span><span class='questionCount'>"+(_questionCount+1)+". </span><input type='text' class='question'  placeholder='Type a question here...'></div>");
       $("#questionsWrapper").append("<div class='questionContent'><form class='questionForm'><span class='error nameError'>*</span>Location's Name:<br><textarea class='name textInput' placeholder='Type a name for your location here...'></textarea><br><span class='error descriptionError'>*</span>Location's Description:<br><textarea class='description textInput' placeholder='Type a description for your location here...'></textarea><br><span class='error hintError'>*</span>Hint:<br><textarea class='hint textInput' placeholder='Type a hint here...'></textarea><br><span class='error imgError'>*</span>Image URL:<br><textarea class='imgURL textInput' placeholder='Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)'></textarea><br><span class='error mapError'>*</span>Add question to map:<br><div id='mapWrapper"+_questionCount+"' class='mapWrapper'><table class='locationTable'><tr><td colspan='2' style='vertical-align:bottom'><a href='#mapWrapper"+_questionCount+"' class='addPoint modern embossed-link' onclick='addPoint("+_questionCount+")'>Find Location on Map</a><br><br><strong>OR</strong><br><br></td></tr><tr><td style='vertical-align:top; text-align:right;'>Latitude: <input type='text' class='latitude latLongText' onchange='updatePoint()'  placeholder='e.g. 34.056'></td><td style='vertical-align:top; text-align:left;'>Longitude: <input type='text' class='longitude latLongText' onchange='updatePoint()'  placeholder='e.g. -117.197'></td></tr></table><div id='map"+_questionCount+"' class='map'></div><div class='mapBlind'></div></div></form></div>");
 
@@ -283,6 +293,66 @@ var errorCheck = function(){
 
 
     return noError;
+};
+
+var saveQuiz = function(){
+    if (errorCheck()){
+
+        var quizLayer = new esri.layers.FeatureLayer("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
+
+        if(_appId === undefined){
+            _appId = parseFloat(new Date().getTime().toString() + Math.floor(Math.random()*99).toString());
+        }
+        if(_title === undefined){
+            _title = $("#appTitle").val();
+        }
+        if(_subtitle === undefined){
+            _subtitle = $("#appSubtitle").val();
+        }
+
+        var quizAdd =[];
+        var quizUpdate =[];
+
+        $(".questionContent").each(function(i){
+
+            var feature;
+
+            var question = $(this).prev().children(".question").val();
+            var title = $(this).children("form").children(".name").val();
+            var description = $(this).children("form").children(".description").val();
+            var hint = $(this).children("form").children(".hint").val();
+            var img_URL = $(this).children("form").children(".imgURL").val();
+            var geoPoint = esri.geometry.webMercatorToGeographic(_maps[i].questionLocation.graphics[0].geometry);
+            var x = geoPoint.x.toString();
+            var y = geoPoint.y.toString();
+
+            var attr = {
+                App_ID:_appId,
+                App_Subtitle:_subtitle,
+                App_Title:_title,
+                Description:description,
+                Hint:hint,
+                Image_URL:img_URL,
+                Lat:y,
+                Long:x,
+                MinScale:null,
+                Question:question,
+                Title:title
+            };
+
+            if($(this).prev().children(".question").data("FID")){
+                attr.FID = $(this).prev().children(".question").data("FID");
+                feature = new esri.Graphic(_maps[i].questionLocation.graphics[0].geometry,null,attr);
+                quizUpdate.push(feature);
+            }
+            else{
+                feature = new esri.Graphic(_maps[i].questionLocation.graphics[0].geometry,null,attr);
+                quizAdd.push(feature);
+            }
+        });
+
+        quizLayer.applyEdits(quizAdd,quizUpdate,null);
+    }
 };
 
 var exportCSV = function(event){
