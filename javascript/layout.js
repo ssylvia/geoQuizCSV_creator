@@ -38,34 +38,35 @@ var createNewQuestion = function(){
       $(".questionContent").slideUp();
       $("#questionsWrapper").append("<div class='questionHeader open'><span class='error questionError'>*</span><span class='questionCount'>"+(_questionCount+1)+". </span><input type='text' class='question'  placeholder='Type a question here...'></div>");
       $("#questionsWrapper").append("<div class='questionContent'><form class='questionForm'><span class='error nameError'>*</span>Location's Name:<br><textarea class='name textInput' placeholder='Type a name for your location here...'></textarea><br><span class='error descriptionError'>*</span>Location's Description:<br><textarea class='description textInput' placeholder='Type a description for your location here...'></textarea><br><span class='error hintError'>*</span>Hint:<br><textarea class='hint textInput' placeholder='Type a hint here...'></textarea><br><span class='error imgError'>*</span>Image URL:<br><textarea class='imgURL textInput' placeholder='Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)'></textarea><br><span class='error mapError'>*</span>Add question to map:<br><div id='mapWrapper"+_questionCount+"' class='mapWrapper'><table class='locationTable'><tr><td colspan='2' style='vertical-align:bottom'><a href='#' class='addPoint modern embossed-link' onclick='addPoint("+_questionCount+")'>Find Location on Map</a><br><br><strong>OR</strong><br><br></td></tr><tr><td style='vertical-align:top; text-align:right;'>Latitude: <input type='text' class='latitude latLongText' onchange='updatePoint()'  placeholder='e.g. 34.056'></td><td style='vertical-align:top; text-align:left;'>Longitude: <input type='text' class='longitude latLongText' onchange='updatePoint()'  placeholder='e.g. -117.197'></td></tr></table><div id='map"+_questionCount+"' class='map'></div><div class='mapBlind'></div></div></form></div>");
-      
+
       $(".mapWrapper").width($("#questionsWrapper").width()-2);
       $(".mapBlind").fadeTo(0,"0.8");
-      
+
       var map = new esri.Map("map"+_questionCount, {
-        extent: new esri.geometry.Extent({xmin:-20098296,ymin:-2804413,xmax:5920428,ymax:15813776,spatialReference:{wkid:54032}})
+        extent: new esri.geometry.Extent({xmin:-20098296,ymin:-2804413,xmax:5920428,ymax:15813776,spatialReference:{wkid:54032}}),
+        sliderStyle:"small"
       });
       map.cursor = "default";
-    
+
       var basemap = new esri.layers.ArcGISTiledMapServiceLayer("http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer");
       map.addLayer(basemap);
-    
+
       var questionLocation = new esri.layers.GraphicsLayer();
       map.addLayer(questionLocation);
-    
+
       map.questionLocation = questionLocation;
-    
+
       dojo.connect(map, 'onLoad', function(theMap) {
         //resize the map when the browser resizes
         dojo.connect(dijit.byId('map'), 'resize', map,map.resize);
       });
-    
+
       dojo.connect(map, 'onMouseOver', function() {
         map.setMapCursor(map.cursor);
       });
-    
+
       dojo.connect(map, 'onClick', function(event) {
-        if(map.cursor !== "default"){          
+        if(map.cursor !== "default"){
           var imgURL = "css/images/icons/QuizIconB"+(_current+1).toString()+".png";
           var symbol = new esri.symbol.PictureMarkerSymbol(imgURL, 30, 30);
           questionLocation.add(new esri.Graphic(event.mapPoint, symbol));
@@ -80,15 +81,15 @@ var createNewQuestion = function(){
           },1000);
         }
       });
-    
+
       _maps.push(map);
 
       _questionCount++;
-      
+
       if (_questionCount === _maxQuestions){
         $("#newQuestion").fadeOut();
       }
-      
+
     }
     $('.textInput').autosize();
     $(".questionHeader").click(function(){
@@ -101,7 +102,7 @@ var createNewQuestion = function(){
             }, 200);
         }
     });
-    
+
     $(".question, .textInput").blur(function(){
         if ($(this).val() !== "Type a question here..." && $(this).val() !== "Type a name for your location here..." && $(this).val() !== "Type a description for your location here..." && $(this).val() !== "Type a hint here..." && $(this).val() !== "Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)"){
             if($(this).val() !== ""){
@@ -109,11 +110,11 @@ var createNewQuestion = function(){
             }
         }
     });
-    
+
     $(".question, .textInput").mouseover(function(){
         $(this).css("border-color","#dadada");
     });
-    
+
     $(".question, .textInput").mouseout(function(){
         if ($(this).val() !== "Type a question here..." && $(this).val() !== "Type a name for your location here..." && $(this).val() !== "Type a description for your location here..." && $(this).val() !== "Type a hint here..." && $(this).val() !== "Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)"){
             if(!$(this).is(":focus") && $(this).val() !== ""){
@@ -121,9 +122,9 @@ var createNewQuestion = function(){
             }
         }
     });
-    
+
     $('input[placeholder], textarea[placeholder]').placeholder();
-    
+
     setTimeout(function() {
         resetLayout();
     }, 200);
@@ -147,14 +148,14 @@ var updatePoint = function(){
 };
 
 var errorCheck = function(){
-    
+
     $(".error").hide();
     $("#errorMessages").html("");
-    
+
     var noError = true;
-    
+
     var errorMessages = [];
-    
+
     $(".questionContent").each(function(i){
         var question = $(this).prev().children(".question").val();
         var title = $(this).children("form").children(".name").val();
@@ -162,7 +163,7 @@ var errorCheck = function(){
         var hint = $(this).children("form").children(".hint").val();
         var img_URL = $(this).children("form").children(".imgURL").val();
         var geoPoint = _maps[i].questionLocation.graphics[0];
-        
+
         if (question === ""){
             noError = false;
             errorMessages.push("Question "+(i+1)+": Enter a question.");
@@ -194,7 +195,7 @@ var errorCheck = function(){
             $(".mapError").eq(i).show();
         }
     });
-    
+
     if(!noError){
         dojo.forEach(errorMessages,function(msg) {
             $("#errorMessages").append("<li>"+msg+"</li>");
@@ -202,8 +203,8 @@ var errorCheck = function(){
         $("#mainError").slideDown("fast");
         resetLayout();
     }
-    
-    
+
+
     return noError;
 };
 
@@ -220,10 +221,10 @@ var exportCSV = function(event){
             var geoPoint = esri.geometry.webMercatorToGeographic(_maps[i].questionLocation.graphics[0].geometry);
             var x = geoPoint.x.toString();
             var y = geoPoint.y.toString();
-            var csvAdd = "\""+index+"\",\""+question+"\",\""+title+"\",\""+description+"\",\""+hint+"\",\""+img_URL+"\",\""+x+"\",\""+y+"\"\n";  
+            var csvAdd = "\""+index+"\",\""+question+"\",\""+title+"\",\""+description+"\",\""+hint+"\",\""+img_URL+"\",\""+x+"\",\""+y+"\"\n";
             csv = csv+csvAdd;
         });
-        
+
         saveFile(event,csv);
     }
 };
@@ -234,8 +235,8 @@ var saveFile = function(event,csv){
 			content		: csv,
 			script		: 'export.php'
 		});
-		
+
 		event.preventDefault();
-        
+
         window.location = "instructions.html";
 };
