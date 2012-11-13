@@ -76,10 +76,18 @@ a.noButton{
 }
 
 #preQuestionContent{
-    text-align:center;
+    margin:25px;
 }
 
-#appId{
+#quizSettings{
+    font-size:32px;
+}
+
+#appConfig{
+    font-size:18px;
+}
+
+.introInput{
     width:350px;
     background:#fafafa;
     font-family:Georgia, serif;
@@ -90,6 +98,14 @@ a.noButton{
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     outline:none;
+}
+
+.quizSettings{
+    width:100%;
+}
+
+#editText{
+    text-align:center;
 }
 
 #appIdError{

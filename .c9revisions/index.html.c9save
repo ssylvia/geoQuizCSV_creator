@@ -363,3 +363,73 @@
 {"ts":1352839420354,"patch":[[{"diffs":[[0,"e='text' id='app"],[-1,"T"],[1,"S"],[0,"itle'  placehold"]],"start1":1851,"start2":1851,"length1":33,"length2":33}]],"length":2860,"saved":false}
 {"ts":1352839421856,"patch":[[{"diffs":[[0,"id='appS"],[1,"ubt"],[0,"itle'  p"]],"start1":1860,"start2":1860,"length1":16,"length2":19}]],"length":2863,"saved":false}
 {"ts":1352839427679,"patch":[[{"diffs":[[0,"<br>Application "],[-1,"T"],[1,"Subt"],[0,"itle: <input typ"]],"start1":1818,"start2":1818,"length1":33,"length2":36}]],"length":2866,"saved":false}
+{"ts":1352846310201,"patch":[[{"diffs":[[0,"4468467'"],[1," c"],[0,"><a href"]],"start1":1588,"start2":1588,"length1":16,"length2":18}]],"length":2868,"saved":false}
+{"ts":1352846311594,"patch":[[{"diffs":[[0,"68467' c"],[1,"lass"],[0,"><a href"]],"start1":1590,"start2":1590,"length1":16,"length2":20}]],"length":2872,"saved":false}
+{"ts":1352846312390,"patch":[[{"diffs":[[0,"7' class"],[1,"="],[0,"><a href"]],"start1":1594,"start2":1594,"length1":16,"length2":17}]],"length":2873,"saved":false}
+{"ts":1352846313719,"patch":[[{"diffs":[[0,"' class="],[1,"\""],[0,"><a href"]],"start1":1595,"start2":1595,"length1":16,"length2":17}]],"length":2874,"saved":false}
+{"ts":1352846316162,"patch":[[{"diffs":[[0," class=\""],[1,"infr"],[0,"><a href"]],"start1":1596,"start2":1596,"length1":16,"length2":20}]],"length":2878,"saved":false}
+{"ts":1352846317236,"patch":[[{"diffs":[[0,"=\"in"],[-1,"fr"],[0,"><a "]],"start1":1602,"start2":1602,"length1":10,"length2":8}]],"length":2876,"saved":false}
+{"ts":1352846318661,"patch":[[{"diffs":[[0,"lass=\"in"],[1,"trod"],[0,"><a href"]],"start1":1598,"start2":1598,"length1":16,"length2":20}]],"length":2880,"saved":false}
+{"ts":1352846319553,"patch":[[{"diffs":[[0,"=\"introd"],[1,"uc"],[0,"><a href"]],"start1":1602,"start2":1602,"length1":16,"length2":18}]],"length":2882,"saved":false}
+{"ts":1352846320765,"patch":[[{"diffs":[[0,"ntro"],[-1,"duc"],[0,"><a "]],"start1":1605,"start2":1605,"length1":11,"length2":8}]],"length":2879,"saved":false}
+{"ts":1352846323301,"patch":[[{"diffs":[[0,"s=\"intro"],[1,"Inp"],[0,"><a href"]],"start1":1601,"start2":1601,"length1":16,"length2":19}]],"length":2882,"saved":false}
+{"ts":1352846324157,"patch":[[{"diffs":[[0,"introInp"],[1,"ut"],[0,"><a href"]],"start1":1604,"start2":1604,"length1":16,"length2":18}]],"length":2884,"saved":false}
+{"ts":1352846325843,"patch":[[{"diffs":[[0,"troInput"],[1,"\""],[0,"><a href"]],"start1":1606,"start2":1606,"length1":16,"length2":17}]],"length":2885,"saved":false}
+{"ts":1352846340342,"patch":[[{"diffs":[[0,"='appTitle' "],[1," class=\"introInput\""],[0," placeholder"]],"start1":1791,"start2":1791,"length1":24,"length2":43}]],"length":2904,"saved":false}
+{"ts":1352846341272,"patch":[[{"diffs":[[0,"ppTitle'"],[-1," "],[0," class=\""]],"start1":1794,"start2":1794,"length1":17,"length2":16}]],"length":2903,"saved":false}
+{"ts":1352846345064,"patch":[[{"diffs":[[0,"title'  "],[1,"class=\"introInput\""],[0,"placehol"]],"start1":1910,"start2":1910,"length1":16,"length2":34}]],"length":2921,"saved":false}
+{"ts":1352846348188,"patch":[[{"diffs":[[0,"ubtitle'"],[-1," "],[0," class=\""]],"start1":1908,"start2":1908,"length1":17,"length2":16}]],"length":2920,"saved":false}
+{"ts":1352846349909,"patch":[[{"diffs":[[0,"roInput\""],[1," "],[0,"placehol"]],"start1":1927,"start2":1927,"length1":16,"length2":17}]],"length":2921,"saved":false}
+{"ts":1352846499035,"patch":[[{"diffs":[[0,"ation Title:"],[-1," "],[1,"<br>"],[0,"<input type="]],"start1":1757,"start2":1757,"length1":25,"length2":28}]],"length":2924,"saved":false}
+{"ts":1352846506946,"patch":[[{"diffs":[[0,"ubtitle:"],[-1," "],[1,"<br>"],[0,"<input t"]],"start1":1875,"start2":1875,"length1":17,"length2":20}]],"length":2927,"saved":false}
+{"ts":1352846542654,"patch":[[{"diffs":[[0,"our "],[-1,"application"],[1,"Quiz"],[0," ID "]],"start1":1476,"start2":1476,"length1":19,"length2":12}]],"length":2920,"saved":false}
+{"ts":1352846545725,"patch":[[{"diffs":[[0,"s your Q"],[-1,"uiz"],[0," ID and "]],"start1":1473,"start2":1473,"length1":19,"length2":16}]],"length":2917,"saved":false}
+{"ts":1352846547832,"patch":[[{"diffs":[[0,"us your "],[-1,"Q"],[1,"quiz"],[0," ID and "]],"start1":1472,"start2":1472,"length1":17,"length2":20}]],"length":2920,"saved":false}
+{"ts":1352846551060,"patch":[[{"diffs":[[0,"now.<br>"],[-1,"Application"],[1,"Quiz"],[0," ID: <in"]],"start1":1500,"start2":1500,"length1":27,"length2":20}]],"length":2913,"saved":false}
+{"ts":1352846556189,"patch":[[{"diffs":[[0,"pConfi\">"],[-1,"Application"],[1,"Quiz"],[0," Title:<"]],"start1":1729,"start2":1729,"length1":27,"length2":20}]],"length":2906,"saved":false}
+{"ts":1352846559899,"patch":[[{"diffs":[[0,"re'><br>"],[-1,"Application"],[1,"Quiz"],[0," Subtitl"]],"start1":1833,"start2":1833,"length1":27,"length2":20}]],"length":2899,"saved":false}
+{"ts":1352846566574,"patch":[[{"diffs":[[0,"holder='"],[-1,"Enter"],[1,"Type"],[0," a subti"]],"start1":1919,"start2":1919,"length1":21,"length2":20}]],"length":2898,"saved":false}
+{"ts":1352846569489,"patch":[[{"diffs":[[0,"er='"],[-1,"Enter"],[1,"Type"],[0," a t"]],"start1":1813,"start2":1813,"length1":13,"length2":12}]],"length":2897,"saved":false}
+{"ts":1352846912364,"patch":[[{"diffs":[[0,"pConfi\">"],[1,"<span"],[0,"Quiz Tit"]],"start1":1729,"start2":1729,"length1":16,"length2":21}]],"length":2902,"saved":false}
+{"ts":1352846913916,"patch":[[{"diffs":[[0,"i\"><span"],[1,">"],[0,"Quiz Tit"]],"start1":1734,"start2":1734,"length1":16,"length2":17}]],"length":2903,"saved":false}
+{"ts":1352846918967,"patch":[[{"diffs":[[0,"i\"><span"],[-1,">"],[0,"Quiz Tit"]],"start1":1734,"start2":1734,"length1":17,"length2":16}]],"length":2902,"saved":false}
+{"ts":1352846922867,"patch":[[{"diffs":[[0,"i\"><span"],[1," id"],[0,"Quiz Tit"]],"start1":1734,"start2":1734,"length1":16,"length2":19}]],"length":2905,"saved":false}
+{"ts":1352846924261,"patch":[[{"diffs":[[0,"<span id"],[1,"="],[0,"Quiz Tit"]],"start1":1737,"start2":1737,"length1":16,"length2":17}]],"length":2906,"saved":false}
+{"ts":1352846924818,"patch":[[{"diffs":[[0,"span id="],[1,"\""],[0,"Quiz Tit"]],"start1":1738,"start2":1738,"length1":16,"length2":17}]],"length":2907,"saved":false}
+{"ts":1352846925381,"patch":[[{"diffs":[[0,"pan id=\""],[1,"qi"],[0,"Quiz Tit"]],"start1":1739,"start2":1739,"length1":16,"length2":18}]],"length":2909,"saved":false}
+{"ts":1352846926314,"patch":[[{"diffs":[[0,"an id=\"q"],[-1,"i"],[0,"Quiz Tit"]],"start1":1740,"start2":1740,"length1":17,"length2":16}]],"length":2908,"saved":false}
+{"ts":1352846926969,"patch":[[{"diffs":[[0,"an id=\"q"],[1,"u"],[0,"Quiz Tit"]],"start1":1740,"start2":1740,"length1":16,"length2":17}]],"length":2909,"saved":false}
+{"ts":1352846927976,"patch":[[{"diffs":[[0,"n id=\"qu"],[1,"i"],[0,"Quiz Tit"]],"start1":1741,"start2":1741,"length1":16,"length2":17}]],"length":2910,"saved":false}
+{"ts":1352846928817,"patch":[[{"diffs":[[0," id=\"qui"],[1,"z"],[0,"Quiz Tit"]],"start1":1742,"start2":1742,"length1":16,"length2":17}]],"length":2911,"saved":false}
+{"ts":1352846931133,"patch":[[{"diffs":[[0,"id=\"quiz"],[1,"Setting"],[0,"Quiz Tit"]],"start1":1743,"start2":1743,"length1":16,"length2":23}]],"length":2918,"saved":false}
+{"ts":1352846932215,"patch":[[{"diffs":[[0,"zSetting"],[1,"\""],[0,"Quiz Tit"]],"start1":1750,"start2":1750,"length1":16,"length2":17}]],"length":2919,"saved":false}
+{"ts":1352846936437,"patch":[[{"diffs":[[0,"zSetting"],[-1,"\""],[1,"s\">"],[0,"Quiz Tit"]],"start1":1750,"start2":1750,"length1":17,"length2":19}]],"length":2921,"saved":false}
+{"ts":1352846939440,"patch":[[{"diffs":[[0,"gs\">Quiz"],[1,"Quiz"],[0," Title:<"]],"start1":1757,"start2":1757,"length1":16,"length2":20}]],"length":2925,"saved":false}
+{"ts":1352846942721,"patch":[[{"diffs":[[0,"gs\">Quiz"],[1," Set"],[0,"Quiz Tit"]],"start1":1757,"start2":1757,"length1":16,"length2":20}]],"length":2929,"saved":false}
+{"ts":1352846944094,"patch":[[{"diffs":[[0,"Quiz Set"],[1,"tings"],[0,"Quiz Tit"]],"start1":1761,"start2":1761,"length1":16,"length2":21}]],"length":2934,"saved":false}
+{"ts":1352846948600,"patch":[[{"diffs":[[0,"Settings"],[1,"</pan"],[0,"Quiz Tit"]],"start1":1766,"start2":1766,"length1":16,"length2":21}]],"length":2939,"saved":false}
+{"ts":1352846950398,"patch":[[{"diffs":[[0,"ttings</"],[1,"s"],[0,"panQuiz "]],"start1":1768,"start2":1768,"length1":16,"length2":17}]],"length":2940,"saved":false}
+{"ts":1352846952748,"patch":[[{"diffs":[[0,"gs</span"],[1,">"],[0,"Quiz Tit"]],"start1":1772,"start2":1772,"length1":16,"length2":17}]],"length":2941,"saved":false}
+{"ts":1352846958186,"patch":[[{"diffs":[[0,"s</span>"],[1,"<br>"],[0,"Quiz Tit"]],"start1":1773,"start2":1773,"length1":16,"length2":20}]],"length":2945,"saved":false}
+{"ts":1352846979015,"patch":[[{"diffs":[[0,"i\"><"],[-1,"span id=\"quizSettings\">Quiz Settings</span><"],[0,"br>Q"]],"start1":1734,"start2":1734,"length1":52,"length2":8}]],"length":2901,"saved":false}
+{"ts":1352846980494,"patch":[[{"diffs":[[0,"/span></p>\r\n"],[1,"        \r\n"],[0,"        <p i"]],"start1":1700,"start2":1700,"length1":24,"length2":34}]],"length":2911,"saved":false}
+{"ts":1352846981373,"patch":[[{"diffs":[[0,"        "],[1,"<span id=\"quizSettings\">Quiz Settings</span>"],[0,"\r\n      "]],"start1":1712,"start2":1712,"length1":16,"length2":60}]],"length":2955,"saved":false}
+{"ts":1352846984915,"patch":[[{"diffs":[[0,"       <"],[-1,"span"],[1,"h3"],[0," id=\"qui"]],"start1":1713,"start2":1713,"length1":20,"length2":18}]],"length":2953,"saved":false}
+{"ts":1352846986898,"patch":[[{"diffs":[[0,"ttings</"],[-1,"span"],[1,"h"],[0,">\r\n     "]],"start1":1749,"start2":1749,"length1":20,"length2":17}]],"length":2950,"saved":false}
+{"ts":1352846988011,"patch":[[{"diffs":[[0,"tings</h"],[1,"2"],[0,">\r\n     "]],"start1":1750,"start2":1750,"length1":16,"length2":17}]],"length":2951,"saved":false}
+{"ts":1352846989803,"patch":[[{"diffs":[[0,"\r\n        <h"],[-1,"3"],[1,"2"],[0," id=\"quizSet"]],"start1":1710,"start2":1710,"length1":25,"length2":25}]],"length":2951,"saved":false}
+{"ts":1352847011619,"patch":[[{"diffs":[[0,"lass=\"introInput"],[1," "],[0,"\" placeholder='T"]],"start1":1840,"start2":1840,"length1":32,"length2":33}]],"length":2952,"saved":false}
+{"ts":1352847013433,"patch":[[{"diffs":[[0,"roInput "],[1,"i"],[0,"\" placeh"]],"start1":1849,"start2":1849,"length1":16,"length2":17}]],"length":2953,"saved":false}
+{"ts":1352847015829,"patch":[[{"diffs":[[0,"roInput "],[-1,"i"],[1,"quiz"],[0,"\" placeh"]],"start1":1849,"start2":1849,"length1":17,"length2":20}]],"length":2956,"saved":false}
+{"ts":1352847016432,"patch":[[{"diffs":[[0,"put quiz"],[1,"Se"],[0,"\" placeh"]],"start1":1853,"start2":1853,"length1":16,"length2":18}]],"length":2958,"saved":false}
+{"ts":1352847018434,"patch":[[{"diffs":[[0,"t quizSe"],[1,"ttings"],[0,"\" placeh"]],"start1":1855,"start2":1855,"length1":16,"length2":22}]],"length":2964,"saved":false}
+{"ts":1352847024497,"patch":[[{"diffs":[[0,"troInput"],[1," quizSettings"],[0,"\" placeh"]],"start1":1970,"start2":1970,"length1":16,"length2":29}]],"length":2977,"saved":false}
+{"ts":1352847059901,"patch":[[{"diffs":[[0,"=\"introInput"],[-1," quizSettings"],[0,"\" placeholde"]],"start1":1966,"start2":1966,"length1":37,"length2":24}]],"length":2964,"saved":false}
+{"ts":1352847061559,"patch":[[{"diffs":[[0,"quizSett"],[-1,"ings"],[0,"\" placeh"]],"start1":1857,"start2":1857,"length1":20,"length2":16}]],"length":2960,"saved":false}
+{"ts":1352847064228,"patch":[[{"diffs":[[0,"quizSett"],[1,"ings"],[0,"\" placeh"]],"start1":1857,"start2":1857,"length1":16,"length2":20},{"diffs":[[0,"troInput"],[1," quizSettings"],[0,"\" placeh"]],"start1":1970,"start2":1970,"length1":16,"length2":29}]],"length":2977,"saved":false}
+{"ts":1352847183034,"patch":[[{"diffs":[[0,"appConfi"],[1,"g"],[0,"\"><br>Qu"]],"start1":1777,"start2":1777,"length1":16,"length2":17}]],"length":2978,"saved":false}
+{"ts":1352847381923,"patch":[[{"diffs":[[0,"ig\"><br>"],[-1,"Quiz "],[0,"Title:<b"]],"start1":1784,"start2":1784,"length1":21,"length2":16}]],"length":2973,"saved":false}
+{"ts":1352847388854,"patch":[[{"diffs":[[0,"ype a title "],[1,"for your quiz"],[0,"here'><br>Qu"]],"start1":1881,"start2":1881,"length1":24,"length2":37}]],"length":2986,"saved":false}
+{"ts":1352847389868,"patch":[[{"diffs":[[0,"our quiz"],[1," "],[0,"here'><b"]],"start1":1898,"start2":1898,"length1":16,"length2":17}]],"length":2987,"saved":false}
+{"ts":1352847394225,"patch":[[{"diffs":[[0,"re'><br>"],[-1,"Quiz "],[0,"Subtitle"]],"start1":1909,"start2":1909,"length1":21,"length2":16}]],"length":2982,"saved":false}
+{"ts":1352847400357,"patch":[[{"diffs":[[0,"ubtitle "],[1,"for your quiz "],[0,"here'></"]],"start1":2019,"start2":2019,"length1":16,"length2":30}]],"length":2996,"saved":false}

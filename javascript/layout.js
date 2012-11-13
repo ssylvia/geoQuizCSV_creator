@@ -28,6 +28,7 @@ var resetLayout = function(){
     $("#bannerArt").css("margin-left",($("#content").width()-406)/2);
     $(".mapWrapper").width($("#questionsWrapper").width()-6);
     $(".textInput").width($("#questionsWrapper").width()-12);
+    $(".quizSettings").width($("#questionsWrapper").width()-12);
     $(".question").each(function(i){
         $(this).width($("#questionsWrapper").width()-$(".questionCount").eq(i).width()-$(".questionError").eq(i).width()-3);
     });
