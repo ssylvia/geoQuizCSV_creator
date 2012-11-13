@@ -134,10 +134,12 @@ var createNewQuestion = function(i){
       });
 
       dojo.connect(map, 'onUpdateEnd', function() {
-        map.questionLocation.clear();
-        var imgURL = "css/images/icons/QuizIconB"+(_current+1).toString()+".png";
-        var symbol = new esri.symbol.PictureMarkerSymbol(imgURL, 30, 30);
-        map.questionLocation.add(new esri.Graphic(esri.geometry.geographicToWebMercator(new esri.geometry.Point(parseFloat($(".longitude").eq(_current).val()),parseFloat($(".latitude").eq(_current).val()))), symbol));
+        if($(".longitude").eq(_current).val() !== "" && $(".longitude").eq(_current).val() !== "e.g. -117.197" && $(".latitude").eq(_current).val() !== "" && $(".latitude").eq(_current).val() !== "e.g. 34.056"){
+            map.questionLocation.clear();
+            var imgURL = "css/images/icons/QuizIconB"+(_current+1).toString()+".png";
+            var symbol = new esri.symbol.PictureMarkerSymbol(imgURL, 30, 30);
+            map.questionLocation.add(new esri.Graphic(esri.geometry.geographicToWebMercator(new esri.geometry.Point(parseFloat($(".longitude").eq(_current).val()),parseFloat($(".latitude").eq(_current).val()))), symbol));
+        }
       });
 
       dojo.connect(map, 'onClick', function(event) {
