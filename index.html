@@ -21,6 +21,9 @@
       <div id="banner">
         <img id="bannerArt" src="css/images/TreasureArt.png" alt="Geography Treasure Hunt">
       </div><!--banner-->
+      <div id="preQuestionContent">
+        <p id="editText">Already have a quiz? Give us your application ID and edit it now.<br>Application ID: <input type='text' id='appId'  placeholder='e.g. 135275324468467'><a href="#" class="modern embossed-link" onclick="queryQuiz()">Edit</a><br><span id="appIdError"></span></p>
+      </div><!--/preQuestionContent-->
       <div id="mainError" class="error">
         <h3 id="mainErrorMesssage">The following error(s) occured:</h3>
         <ul id="errorMessages">
@@ -32,7 +35,8 @@
       <!--<button id='export' type="button" onclick="exportCSV(event)">Export CSV</button>-->
       <center style="padding-bottom:20px">
         <a href="#" id="newQuestion" class="modern embossed-link" onclick="createNewQuestion()">Add another question</a>
-        <a href="#" class="modern embossed-link" onclick="exportCSV(event)">Download CSV and Create Application</a>
+        <!--<a href="#" class="modern embossed-link" onclick="exportCSV(event)">Download CSV and Create Application</a>-->
+        <a href="#" class="modern embossed-link" onclick="saveQuiz()">Save Quiz</a>
       </center>
     </div><!--/content-->
   </body>

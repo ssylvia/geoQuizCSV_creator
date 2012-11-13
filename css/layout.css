@@ -67,12 +67,36 @@ a.noButton{
     font-weight:bold;
 }
 
-#questionsWrapper{    
+#questionsWrapper{
     margin:25px;
 }
 
-#instuctionsWrapper{    
+#instuctionsWrapper{
     margin:25px;
+}
+
+#preQuestionContent{
+    text-align:center;
+}
+
+#appId{
+    width:350px;
+    background:#fafafa;
+    font-family:Georgia, serif;
+    font-size:16px;
+    color:#1c99c2;
+    padding:3px;
+    border:3px solid #dadada;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    outline:none;
+}
+
+#appIdError{
+    display:none;
+    font-size:16px;
+    font-weight:bold;
+    color:#C43D40;
 }
 
 #webmap{
@@ -126,7 +150,7 @@ a.noButton{
     width:100%;
     margin:7px 0 15px 0;
     border:3px solid #dadada;
-    overflow:hidden;    
+    overflow:hidden;
 }
 
 .question{
@@ -163,7 +187,7 @@ a.noButton{
     position:relative;
     width:100%;
     height:500px;
-    margin-top:7px;
+    margin:7px 0 10px 0;
     border:3px solid #dadada;
     overflow:hidden;
 }
@@ -197,7 +221,7 @@ a.noButton{
     padding:5px;
 }
 
-.latLongText{   
+.latLongText{
     background:#fafafa;
     font-family:Georgia, serif;
     font-weight:bold;
@@ -231,11 +255,11 @@ a.noButton{
 .modern:hover  { background: #1c99c2; }
 
 .embossed-link {
-  box-shadow: 
-    inset 0 3px 2px rgba(255,255,255,.22), 
-    inset 0 -3px 2px rgba(0,0,0,.17), 
-    inset 0 20px 10px rgba(255,255,255,.12), 
-    0 0 4px 1px rgba(0,0,0,.1), 
+  box-shadow:
+    inset 0 3px 2px rgba(255,255,255,.22),
+    inset 0 -3px 2px rgba(0,0,0,.17),
+    inset 0 20px 10px rgba(255,255,255,.12),
+    0 0 4px 1px rgba(0,0,0,.1),
     0 3px 2px rgba(0,0,0,.2);
 }
 
@@ -244,15 +268,15 @@ a.noButton{
     inset 0 1px 0 rgba(255,255,255,0.5),
     0 2px 2px rgba(0,0,0,0.3),
     0 0 4px 1px rgba(0,0,0,0.2),
-    inset 0 3px 2px rgba(255,255,255,.22), 
-    inset 0 -3px 2px rgba(0,0,0,.15), 
-    inset 0 20px 10px rgba(255,255,255,.12), 
-    0 0 4px 1px rgba(0,0,0,.1), 
+    inset 0 3px 2px rgba(255,255,255,.22),
+    inset 0 -3px 2px rgba(0,0,0,.15),
+    inset 0 20px 10px rgba(255,255,255,.12),
+    0 0 4px 1px rgba(0,0,0,.1),
     0 3px 2px rgba(0,0,0,.2);
 }
 
 .modern.embossed-link:active {
-  box-shadow: 
+  box-shadow:
     inset 0 -2px 1px rgba(255,255,255,0.2),
     inset 0 3px 2px rgba(0,0,0,0.12);
 }

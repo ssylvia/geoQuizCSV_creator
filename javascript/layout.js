@@ -4,6 +4,7 @@ var _questionCount;
 var _current = 0;
 var _maps = [];
 var _maxQuestions = 10;
+var _appId = undefined;
 
 $(document).ready(function(){
     _questionCount = $(".questionHeader").length;
@@ -32,12 +33,79 @@ var resetLayout = function(){
     });
 };
 
-var createNewQuestion = function(){
+var queryQuiz = function () {
+    if($("#appId").val() !== "" && $("#appId").val() !== "e.g. 135275324468467"){
+
+        _appId = undefined;
+
+        $("#appIdError").hide();
+
+        var queryTask = new esri.tasks.QueryTask("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
+
+        var query = new esri.tasks.Query();
+        query.returnGeometry = false;
+        query.outFields = ["*"];
+        query.where = "App_ID = " + parseFloat($("#appId").val());
+
+        queryTask.execute(query,editResults);
+
+    }
+    else{
+        $("#appIdError").html("You must first provide a application ID to continue.");
+        $("#appIdError").show();
+    }
+};
+
+var editResults = function(results){
+    if (results.features.length > 0){
+
+        dojo.forEach(_maps,function(map){
+            map.destroy();
+        });
+
+        _appId = results.features[0].attributes.App_ID;
+
+        _questionCount = 0;
+        _current = 0;
+        _maps = [];
+
+        $("#questionsWrapper").html("");
+
+        dojo.forEach(results.features,function(ftr,i) {
+            createNewQuestion(i);
+            $(".question").eq(i).val(ftr.attributes.Question);
+            $(".name").eq(i).val(ftr.attributes.Title);
+            $(".description").eq(i).val(ftr.attributes.Description);
+            $(".hint").eq(i).val(ftr.attributes.Hint);
+            $(".imgURL").eq(i).val(ftr.attributes.Image_URL);
+            $(".latitude").eq(i).val(ftr.attributes.Lat);
+            $(".longitude").eq(i).val(ftr.attributes.Long);
+        });
+
+        $(".question, .textInput").each(function(){
+        if ($(this).val() !== "Type a question here..." && $(this).val() !== "Type a name for your location here..." && $(this).val() !== "Type a description for your location here..." && $(this).val() !== "Type a hint here..." && $(this).val() !== "Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)"){
+            if($(this).val() !== ""){
+                $(this).css("border-color","#fafafa");
+            }
+        }
+
+        resetLayout();
+    });
+
+    }
+    else{
+        $("#appIdError").html("No results found for application: "+$("#appId").val());
+        $("#appIdError").show();
+    }
+};
+
+var createNewQuestion = function(i){
+    _questionCount = i || _questionCount;
     if (_questionCount < _maxQuestions){
       _current = _questionCount;
       $(".questionContent").slideUp();
       $("#questionsWrapper").append("<div class='questionHeader open'><span class='error questionError'>*</span><span class='questionCount'>"+(_questionCount+1)+". </span><input type='text' class='question'  placeholder='Type a question here...'></div>");
-      $("#questionsWrapper").append("<div class='questionContent'><form class='questionForm'><span class='error nameError'>*</span>Location's Name:<br><textarea class='name textInput' placeholder='Type a name for your location here...'></textarea><br><span class='error descriptionError'>*</span>Location's Description:<br><textarea class='description textInput' placeholder='Type a description for your location here...'></textarea><br><span class='error hintError'>*</span>Hint:<br><textarea class='hint textInput' placeholder='Type a hint here...'></textarea><br><span class='error imgError'>*</span>Image URL:<br><textarea class='imgURL textInput' placeholder='Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)'></textarea><br><span class='error mapError'>*</span>Add question to map:<br><div id='mapWrapper"+_questionCount+"' class='mapWrapper'><table class='locationTable'><tr><td colspan='2' style='vertical-align:bottom'><a href='#' class='addPoint modern embossed-link' onclick='addPoint("+_questionCount+")'>Find Location on Map</a><br><br><strong>OR</strong><br><br></td></tr><tr><td style='vertical-align:top; text-align:right;'>Latitude: <input type='text' class='latitude latLongText' onchange='updatePoint()'  placeholder='e.g. 34.056'></td><td style='vertical-align:top; text-align:left;'>Longitude: <input type='text' class='longitude latLongText' onchange='updatePoint()'  placeholder='e.g. -117.197'></td></tr></table><div id='map"+_questionCount+"' class='map'></div><div class='mapBlind'></div></div></form></div>");
+      $("#questionsWrapper").append("<div class='questionContent'><form class='questionForm'><span class='error nameError'>*</span>Location's Name:<br><textarea class='name textInput' placeholder='Type a name for your location here...'></textarea><br><span class='error descriptionError'>*</span>Location's Description:<br><textarea class='description textInput' placeholder='Type a description for your location here...'></textarea><br><span class='error hintError'>*</span>Hint:<br><textarea class='hint textInput' placeholder='Type a hint here...'></textarea><br><span class='error imgError'>*</span>Image URL:<br><textarea class='imgURL textInput' placeholder='Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)'></textarea><br><span class='error mapError'>*</span>Add question to map:<br><div id='mapWrapper"+_questionCount+"' class='mapWrapper'><table class='locationTable'><tr><td colspan='2' style='vertical-align:bottom'><a href='#mapWrapper"+_questionCount+"' class='addPoint modern embossed-link' onclick='addPoint("+_questionCount+")'>Find Location on Map</a><br><br><strong>OR</strong><br><br></td></tr><tr><td style='vertical-align:top; text-align:right;'>Latitude: <input type='text' class='latitude latLongText' onchange='updatePoint()'  placeholder='e.g. 34.056'></td><td style='vertical-align:top; text-align:left;'>Longitude: <input type='text' class='longitude latLongText' onchange='updatePoint()'  placeholder='e.g. -117.197'></td></tr></table><div id='map"+_questionCount+"' class='map'></div><div class='mapBlind'></div></div></form></div>");
 
       $(".mapWrapper").width($("#questionsWrapper").width()-2);
       $(".mapBlind").fadeTo(0,"0.8");
@@ -63,6 +131,13 @@ var createNewQuestion = function(){
 
       dojo.connect(map, 'onMouseOver', function() {
         map.setMapCursor(map.cursor);
+      });
+
+      dojo.connect(map, 'onUpdateEnd', function() {
+        map.questionLocation.clear();
+        var imgURL = "css/images/icons/QuizIconB"+(_current+1).toString()+".png";
+        var symbol = new esri.symbol.PictureMarkerSymbol(imgURL, 30, 30);
+        map.questionLocation.add(new esri.Graphic(esri.geometry.geographicToWebMercator(new esri.geometry.Point(parseFloat($(".longitude").eq(_current).val()),parseFloat($(".latitude").eq(_current).val()))), symbol));
       });
 
       dojo.connect(map, 'onClick', function(event) {
