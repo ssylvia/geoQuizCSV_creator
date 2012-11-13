@@ -73,7 +73,7 @@ var editResults = function(results){
 
         dojo.forEach(results.features,function(ftr,i) {
             createNewQuestion(i);
-            $(".question").eq(i).val(ftr.attributes.Question);
+            $(".question").eq(i).val(ftr.attributes.Question).data("FID",ftr.attributes.FID);
             $(".name").eq(i).val(ftr.attributes.Title);
             $(".description").eq(i).val(ftr.attributes.Description);
             $(".hint").eq(i).val(ftr.attributes.Hint);
