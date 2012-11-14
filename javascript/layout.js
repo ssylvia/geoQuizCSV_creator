@@ -9,6 +9,7 @@ var _appId = undefined;
 var _title = undefined;
 var _subtitle = undefined;
 var _editableFeatures;
+var _quizLayer;
 
 $(document).ready(function(){
     _questionCount = $(".questionHeader").length;
@@ -17,6 +18,7 @@ $(document).ready(function(){
 
 dojo.ready(function(){
     createNewQuestion();
+    _quizLayer = new esri.layers.FeatureLayer("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
 });
 
 $(window).resize(function(){
@@ -307,10 +309,11 @@ var errorCheck = function(){
 var saveQuiz = function(view){
     if (errorCheck()){
 
-        var quizLayer = new esri.layers.FeatureLayer("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
+        _quizLayer = new esri.layers.FeatureLayer("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
 
         if(_appId === undefined){
             _appId = parseFloat(new Date().getTime().toString() + Math.floor(Math.random()*99).toString());
+            $("#appId").val(_appId);
             $("#launch").show();
         }
         if(_title === undefined){
@@ -365,7 +368,69 @@ var saveQuiz = function(view){
             }
         });
 
-        quizLayer.applyEdits(quizAdd,quizUpdate,null);
+        _quizLayer.applyEdits(quizAdd,quizUpdate,null,function(){
+             var queryTask = new esri.tasks.QueryTask("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
+
+            var query = new esri.tasks.Query();
+            query.returnGeometry = true;
+            query.outFields = ["*"];
+            query.where = "App_ID = " + _appId;
+
+            queryTask.execute(query,function(results){
+                 dojo.forEach(results.features,function(ftr,i) {
+                    $(".question").eq(i).val(ftr.attributes.Question).data("FID",ftr.attributes.FID);
+                 });
+            });
+        });
+    }
+};
+
+var deleteQuiz = function () {
+    if(confirm("Are you sure you want to delete you quiz?")){
+        if(_appId !== undefined){
+
+            var queryTask = new esri.tasks.QueryTask("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
+
+            var query = new esri.tasks.Query();
+            query.returnGeometry = true;
+            query.outFields = ["*"];
+            query.where = "App_ID = " + _appId;
+
+            queryTask.execute(query,function(results){
+
+
+                deleteFeatures = [];
+
+                dojo.forEach(results.features,function(ftr){
+                    var feature = new esri.Graphic(null,null,ftr.attributes);
+                    deleteFeatures.push(feature);
+                });
+
+                _quizLayer.applyEdits(null,null,deleteFeatures);
+
+            });
+
+        }
+
+        dojo.forEach(_maps,function(map){
+            map.destroy();
+        });
+
+        _appId = undefined;
+        _title = undefined;
+        $("#appTitle").val("");
+        _subtitle = undefined;
+        $("#appSubtitle").val("");
+
+        $(".quizSettings").css("border-color","#dadada");
+
+        _questionCount = 0;
+        _current = 0;
+        _maps = [];
+
+        $("#questionsWrapper").html("");
+
+        createNewQuestion();
     }
 };
 
