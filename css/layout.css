@@ -254,10 +254,6 @@ a.noButton{
     outline:none;
 }
 
-#launch{
-    display:none;
-}
-
 #modal{
     display:none;
     position:absolute;
@@ -289,6 +285,13 @@ a.noButton{
     text-align:center;
 }
 
+#bottomButtons{
+    margin:25px;
+    padding-top:25px;
+    text-align:center;
+    border-top:1px solid #65350b;
+}
+
 .modern {
   display: inline-block;
   margin: 10px;
@@ -305,6 +308,7 @@ a.noButton{
   /* Font styles */
   text-decoration: none;
   text-shadow: 0 0px rgba(255,255,255,0.7);
+  cursor:pointer;
 }
 
 .modern:hover  { background: #1c99c2; }
@@ -346,4 +350,11 @@ a.noButton{
 
 :-moz-placeholder {
     color:#999;
+}
+
+.remove{
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    margin-left:0;
 }
