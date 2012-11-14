@@ -95,12 +95,15 @@ var editResults = function(results){
             $(".longitude").eq(i).val(ftr.attributes.Long);
         });
 
-        $(".question, .textInput").each(function(){
-        if ($(this).val() !== "Type a question here..." && $(this).val() !== "Type a name for your location here..." && $(this).val() !== "Type a description for your location here..." && $(this).val() !== "Type a hint here..." && $(this).val() !== "Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)"){
+        $(".question, .textInput, .quizSettings").each(function(){
+        if ($(this).val() !== "Type a subtitle for your quiz here..." && $(this).val() !== "Type a title for your quiz here..." && $(this).val() !== "Type a question here..." && $(this).val() !== "Type a name for your location here..." && $(this).val() !== "Type a description for your location here..." && $(this).val() !== "Type a hint here..." && $(this).val() !== "Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)"){
             if($(this).val() !== ""){
                 $(this).css("border-color","#fafafa");
             }
         }
+
+
+        $("#launch").show();
 
         resetLayout();
     });
@@ -196,7 +199,7 @@ var createNewQuestion = function(i){
         }
     });
 
-    $(".question, .textInput").blur(function(){
+    $(".question, .textInput, .quizSettings").blur(function(){
         if ($(this).val() !== "Type a question here..." && $(this).val() !== "Type a name for your location here..." && $(this).val() !== "Type a description for your location here..." && $(this).val() !== "Type a hint here..." && $(this).val() !== "Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)"){
             if($(this).val() !== ""){
                 $(this).css("border-color","#fafafa");
@@ -204,11 +207,11 @@ var createNewQuestion = function(i){
         }
     });
 
-    $(".question, .textInput").mouseover(function(){
+    $(".question, .textInput, .quizSettings").mouseover(function(){
         $(this).css("border-color","#dadada");
     });
 
-    $(".question, .textInput").mouseout(function(){
+    $(".question, .textInput, .quizSettings").mouseout(function(){
         if ($(this).val() !== "Type a question here..." && $(this).val() !== "Type a name for your location here..." && $(this).val() !== "Type a description for your location here..." && $(this).val() !== "Type a hint here..." && $(this).val() !== "Paste your image URL here... (e.g. http://www.awebsite.com/myimage.png)"){
             if(!$(this).is(":focus") && $(this).val() !== ""){
                 $(this).css("border-color","#fafafa");
@@ -301,19 +304,24 @@ var errorCheck = function(){
     return noError;
 };
 
-var saveQuiz = function(){
+var saveQuiz = function(view){
     if (errorCheck()){
 
         var quizLayer = new esri.layers.FeatureLayer("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
 
         if(_appId === undefined){
             _appId = parseFloat(new Date().getTime().toString() + Math.floor(Math.random()*99).toString());
+            $("#launch").show();
         }
         if(_title === undefined){
-            _title = $("#appTitle").val();
+            _title = $("#appTitle").val() || "Enter a title for your quiz here...";
         }
         if(_subtitle === undefined){
-            _subtitle = $("#appSubtitle").val();
+            _subtitle = $("#appSubtitle").val() || "Enter a subtitle for your quiz here...";
+        }
+
+        if (view === true){
+            openInfo();
         }
 
         var quizAdd =[];
@@ -359,6 +367,29 @@ var saveQuiz = function(){
 
         quizLayer.applyEdits(quizAdd,quizUpdate,null);
     }
+};
+
+var launchApp = function(){
+    saveQuiz(true);
+};
+
+var openInfo = function(){
+    $("#modal").fadeTo("slow","0.7");
+    $("body").css("overflow","hidden");
+    $("#viewContent").css({
+        "left":($(window).width()-600)/2,
+        "top":($(window).height()-200)/2
+    });
+    $("#quizID").html(_appId);
+    $("#viewContent").fadeIn();
+};
+
+var goToQuiz = function () {
+    $("#modal").fadeOut();
+    $("#viewContent").fadeOut();
+    $("body").css("overflow","auto");
+
+    window.open("http://storymaps.esri.com/lee/treasure-hunt-template/?appid="+_appId);
 };
 
 var exportCSV = function(event){

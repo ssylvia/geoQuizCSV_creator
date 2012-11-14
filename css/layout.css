@@ -250,6 +250,41 @@ a.noButton{
     outline:none;
 }
 
+#launch{
+    display:none;
+}
+
+#modal{
+    display:none;
+    position:absolute;
+    background:#000;
+    top:0;
+    height:100%;
+    width:100%;
+}
+
+#viewContent{
+    display:none;
+    position:absolute;
+    background:#fafafa;
+    width:600px;
+    z-index:1000;
+}
+
+#viewText{
+    padding:25px;
+    text-align:center;
+    color:#1c99c2;
+}
+
+#quizID{
+    font-family:Georgia, serif;
+    color:#65350b;
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+}
+
 .modern {
   display: inline-block;
   margin: 10px;
