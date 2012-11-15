@@ -128,7 +128,7 @@ var createNewQuestion = function(i){
       $(".mapBlind").fadeTo(0,"0.8");
 
       var map = new esri.Map("map"+_questionCount, {
-        extent: new esri.geometry.Extent({xmin:-20098296,ymin:-2804413,xmax:5920428,ymax:15813776,spatialReference:{wkid:54032}}),
+        extent: new esri.geometry.Extent({xmin:-16495722.200163035,ymin:-6496535.908012041,xmax:18491645.882745054,ymax:13071343.332988009,spatialReference:{wkid:102100}}),
         sliderStyle:"small"
       });
       map.cursor = "default";
@@ -368,18 +368,39 @@ var saveQuiz = function(view){
             }
         });
 
-        _quizLayer.applyEdits(quizAdd,quizUpdate,null,function(){
-             var queryTask = new esri.tasks.QueryTask("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
+        console.log(quizUpdate);
 
+        _quizLayer.applyEdits(quizAdd,quizUpdate,null,function(){
+        var queryTask = new esri.tasks.QueryTask("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
             var query = new esri.tasks.Query();
             query.returnGeometry = true;
             query.outFields = ["*"];
             query.where = "App_ID = " + _appId;
 
             queryTask.execute(query,function(results){
-                 dojo.forEach(results.features,function(ftr,i) {
-                    $(".question").eq(i).val(ftr.attributes.Question).data("FID",ftr.attributes.FID);
-                 });
+                dojo.forEach(results.features,function(ftr,i) {
+                    $(".question").each(function(){
+                        if($(this).val() === ftr.attributes.Question){
+                            $(this).data("FID",ftr.attributes.FID);
+                        }
+                    });
+                });
+            });
+        },function(){
+        var queryTask = new esri.tasks.QueryTask("http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Treasure_Hunt_Questions/FeatureServer/0");
+            var query = new esri.tasks.Query();
+            query.returnGeometry = true;
+            query.outFields = ["*"];
+            query.where = "App_ID = " + _appId;
+
+            queryTask.execute(query,function(results){
+                dojo.forEach(results.features,function(ftr,i) {
+                    $(".question").each(function(){
+                        if($(this).val() === ftr.attributes.Question){
+                            $(this).data("FID",ftr.attributes.FID);
+                        }
+                    });
+                });
             });
         });
     }
